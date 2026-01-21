@@ -23,10 +23,13 @@ body {
 
 .glitch-countdown {
   font-size: clamp(2rem, 6vw, 4rem);
-  text-shadow:
-    2px 0 #ff2d95,
-    -2px 0 #ffb000;
+  background: linear-gradient(135deg, #1a9fff 0%, #00d9ff 20%, #d500ff 40%, #ff3333 60%, #ffaa00 80%, #00ccff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
   animation: glitch 0.2s infinite;
+  font-weight: bold;
 }
 
 @keyframes glitch {
@@ -38,6 +41,7 @@ body {
 
 /* ================= MAIN ================= */
 .container {
+
   padding: 16px;
 }
 
@@ -51,7 +55,7 @@ body {
   border: 1px solid #00f6ff;
   border-radius: 12px;
   padding: 16px;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
 }
@@ -68,6 +72,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-direction: row-reverse;
 }
 
 /* 👉 OCULTA el cursor real */
@@ -94,10 +99,28 @@ body {
   50% { opacity: 0; }
 }
 
+/* ================= CONTADOR TOP ================= */
+.glitch-countdown-top {
+  font-size: clamp(3rem, 12vw, 8rem);
+  background: linear-gradient(135deg, #1a9fff 0%, #00d9ff 20%, #d500ff 40%, #ff3333 60%, #ffaa00 80%, #00ccff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  animation: glitch 0.2s infinite;
+  margin-bottom: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  font-weight: bold;
+}
+
 /* ================= MOBILE ================= */
 @media (max-width: 600px) {
   .terminal {
-    height: 90vh;
+    height: 65vh;
     font-size: 0.85rem;
   }
 }

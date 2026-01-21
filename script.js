@@ -2,6 +2,7 @@
 const intro = document.getElementById("intro");
 const main = document.getElementById("main");
 const glitchCountdown = document.getElementById("glitchCountdown");
+const glitchCountdownTop = document.getElementById("glitchCountdownTop");
 
 const targetDate = new Date("2026-03-14T00:00:00");
 
@@ -12,7 +13,9 @@ function updateGlitchCountdown() {
   const m = Math.floor((diff / 60000) % 60);
   const s = Math.floor((diff / 1000) % 60);
 
-  glitchCountdown.textContent = `${d}d ${h}h ${m}m ${s}s`;
+  const text = `${d}d ${h}h ${m}m ${s}s`;
+  glitchCountdown.textContent = text;
+  glitchCountdownTop.textContent = text;
 }
 
 setInterval(updateGlitchCountdown, 100);
