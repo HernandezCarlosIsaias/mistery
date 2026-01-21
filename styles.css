@@ -7,7 +7,8 @@ body {
   margin: 0;
   background: #000;
   color: #00f6ff;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* ================= INTRO ================= */
@@ -55,7 +56,8 @@ body {
   border: 1px solid #00f6ff;
   border-radius: 12px;
   padding: 16px;
-  height: 70vh;
+  height: 60vh;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -101,26 +103,37 @@ body {
 
 /* ================= CONTADOR TOP ================= */
 .glitch-countdown-top {
-  font-size: clamp(3rem, 12vw, 8rem);
-  background: linear-gradient(135deg, #1a9fff 0%, #00d9ff 20%, #d500ff 40%, #ff3333 60%, #ffaa00 80%, #00ccff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: clamp(1.5rem, 8vw, 6rem);
+  white-space: nowrap;
   text-shadow: none;
   animation: glitch 0.2s infinite;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25vh;
+  width: fit-content;
   font-weight: bold;
+  background: linear-gradient(135deg, #1a9fff 0%, #00d9ff 20%, #d500ff 40%, #ff3333 60%, #ffaa00 80%, #00ccff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  gap: 0.4em;
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 600px) {
   .terminal {
+    width: 100%;
     height: 65vh;
     font-size: 0.85rem;
   }
+}
+
+
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
