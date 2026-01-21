@@ -137,3 +137,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+/* ================= GHOST TEXT ================= */
+.terminal-input input::placeholder {
+  color: #888;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.terminal-input input.ghost::placeholder {
+  opacity: 1;
+}

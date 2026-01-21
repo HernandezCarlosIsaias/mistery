@@ -6,6 +6,9 @@ const glitchCountdownTop = document.getElementById("glitchCountdownTop");
 
 const targetDate = new Date("2026-03-14T09:00:00");
 
+console.warn("System hint: Sometimes you need to 'exit' to find the way in.");
+console.warn("Sugerencia del Sistema: A veces es necesario 'exit' para encontrar la entrada.");
+
 function updateGlitchCountdown() {
   const diff = targetDate - new Date();
   const d = Math.floor(diff / 86400000);
@@ -35,8 +38,22 @@ setTimeout(() => {
     main.classList.remove("hidden");
     boot();
     input.focus();
+    resetInactivityTimer();
   }, 800);
 }, 2500);
+
+// ================= GHOST TEXT =================
+let inactivityTimer;
+
+function showGhostText() {
+  input.classList.add('ghost');
+}
+
+function resetInactivityTimer() {
+  input.classList.remove('ghost');
+  clearTimeout(inactivityTimer);
+  inactivityTimer = setTimeout(showGhostText, 7500);
+}
 
 // ================= TERMINAL =================
 const output = document.getElementById("terminal-output");
@@ -73,6 +90,7 @@ const commands = {
 
 // Sonido + comandos
 input.addEventListener("keydown", (e) => {
+  resetInactivityTimer();
   keySound.currentTime = 0;
   keySound.play();
 
@@ -89,6 +107,7 @@ input.addEventListener("keydown", (e) => {
 
 // Oculta / muestra cursor fake
 input.addEventListener("input", () => {
+  resetInactivityTimer();
   if (input.value.length > 0) {
     fakeCursor.classList.add("hidden");
   } else {
