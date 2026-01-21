@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>14·03·2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <div class="glitch-countdown" id="glitchCountdown"></div>
+</div>
+
+<!-- MAIN -->
+<div class="container hidden" id="main">
+  <section class="terminal">
+    <div id="terminal-output"></div>
+
+    <div class="terminal-input">
+      <span>&gt;</span>
+      <input type="text" id="command-input" autocomplete="off" />
+      <span class="cursor" id="fakeCursor">█</span>
+    </div>
+  </section>
+</div>
+
+<audio id="keySound" src="key.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
