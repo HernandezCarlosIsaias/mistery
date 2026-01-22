@@ -169,6 +169,12 @@ h1 {
   color: white;
 }
 
+@media (max-width: 1152px) {
+  .glitch-countdown {
+    font-size: clamp(1.5rem, 10vw, 10rem);
+  }
+}
+
 @media (max-width: 600px) {
   .terminal {
     width: 100%;
