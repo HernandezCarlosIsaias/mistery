@@ -11,7 +11,6 @@ body {
   overflow: hidden;
 }
 
-/* ================= INTRO ================= */
 #intro {
   position: fixed;
   inset: 0;
@@ -51,7 +50,6 @@ body {
   }
 }
 
-/* ================= MAIN ================= */
 .container {
   padding: 16px;
 }
@@ -60,7 +58,6 @@ body {
   display: none;
 }
 
-/* ================= TERMINAL ================= */
 .terminal {
   background: #050505;
   border: 1px solid #00f6ff;
@@ -79,7 +76,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* ================= INPUT ================= */
 .terminal-input {
   display: flex;
   align-items: center;
@@ -87,7 +83,6 @@ body {
   flex-direction: row-reverse;
 }
 
-/* 👉 OCULTA el cursor real */
 .terminal-input input {
   background: transparent;
   border: none;
@@ -98,7 +93,6 @@ body {
   caret-color: transparent;
 }
 
-/* ================= CURSOR FAKE ================= */
 .cursor {
   animation: blink 1s step-end infinite;
 }
@@ -113,7 +107,6 @@ body {
   }
 }
 
-/* ================= CONTADOR TOP ================= */
 .glitch-countdown-top {
   font-size: clamp(1.5rem, 8vw, 8rem);
   white-space: nowrap;
@@ -139,7 +132,6 @@ body {
   align-items: center;
 }
 
-/* ================= GHOST TEXT ================= */
 .terminal-input input::placeholder {
   color: #888;
   opacity: 0;
@@ -177,8 +169,6 @@ h1 {
   color: white;
 }
 
-/* ================= MOBILE ================= */
-
 @media (max-width: 600px) {
   .terminal {
     width: 100%;
@@ -195,10 +185,10 @@ h1 {
   }
 
   .button-hide {
-    color: transparent; /* Oculta el texto "Pista" inicialmente en mobile */
+    color: transparent;
   }
 
   .button-hide.show-ghost {
-    color: white; /* Muestra el texto "Pista" como en el hover de desktop */
+    color: white;
   }
 }
