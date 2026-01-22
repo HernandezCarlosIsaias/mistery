@@ -22,8 +22,8 @@ body {
   z-index: 10;
 }
 
-.glitch-countdown {
-  font-size: clamp(2rem, 6vw, 4rem);
+.glitch-countdown{
+  font-size: clamp(4rem, 12vw, 8rem);
   background: linear-gradient(135deg, #1a9fff 0%, #00d9ff 20%, #d500ff 40%, #ff3333 60%, #ffaa00 80%, #00ccff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,7 +103,7 @@ body {
 
 /* ================= CONTADOR TOP ================= */
 .glitch-countdown-top {
-  font-size: clamp(1.5rem, 8vw, 6rem);
+  font-size: clamp(1.5rem, 8vw, 8rem);
   white-space: nowrap;
   text-shadow: none;
   animation: glitch 0.2s infinite;
@@ -120,6 +120,7 @@ body {
   background-clip: text;
   gap: 0.4em;
 }
+
 
 /* ================= MOBILE ================= */
 @media (max-width: 600px) {
@@ -147,4 +148,10 @@ body {
 
 .terminal-input input.ghost::placeholder {
   opacity: 1;
+}
+
+h2, h1 {
+  text-align: center;
+  font-weight: bold;
+  margin: 8px 0;
 }

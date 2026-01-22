@@ -6,7 +6,7 @@ const glitchCountdownTop = document.getElementById("glitchCountdownTop");
 
 const targetDate = new Date("2026-03-14T09:00:00");
 
-console.warn("System hint: Sometimes you need to 'exit' to find the way in.");
+console.warn("System hint: Sometimes you need to 'quit' to find the way in.");
 console.warn("Sugerencia del Sistema: A veces es necesario 'exit' para encontrar la entrada.");
 
 function updateGlitchCountdown() {
@@ -52,7 +52,7 @@ function showGhostText() {
 function resetInactivityTimer() {
   input.classList.remove('ghost');
   clearTimeout(inactivityTimer);
-  inactivityTimer = setTimeout(showGhostText, 7500);
+  inactivityTimer = setTimeout(showGhostText, 10000);
 }
 
 // ================= TERMINAL =================
@@ -81,18 +81,18 @@ function boot() {
 }
 
 const commands = {
-  "exit": "No hay salida. Una vez que entras en el bucle de codear.la, no hay break que valga.",
-  "quit": "No hay salida. Una vez que entras en el bucle de codear.la, no hay break que valga.",
-  "git commit": "Error: Nothing to commit (yet). Get your ticket first.",
-  "hello world": "Hello, dev. ¿Estás listo para dejar de debugear solo y empezar a buildear juntos?",
-  "help": "Si buscas respuestas, búscalas en el código. Si buscas el futuro, nos vemos el 14/03."
+  "exit": "No hay salida. Una vez que entrás en el bucle de codear.la, el código deja de ser algo que se hace solo.",
+  "quit": "Salir no rompe el loop. Esto sigue con más gente, más ideas y más código.",
+  "git commit": "Nothing to commit todavía. Antes hay que encontrarse, compartir y recién después hacer push.",
+  "hello world": "Hola, dev. Esto no es un proyecto personal. Es un punto de encuentro.",
+  "help": "No es un tutorial. Es una experiencia en vivo para quienes escriben código todos los días. 14/03.",
+  "date": "14/03/2026 — guardalo. No hay replay."
 };
 
-// Sonido + comandos
+
 input.addEventListener("keydown", (e) => {
   resetInactivityTimer();
-  keySound.currentTime = 0;
-  keySound.play();
+ 
 
   if (e.key === "Enter") {
     const cmd = input.value.trim().toLowerCase();
