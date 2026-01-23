@@ -76,6 +76,30 @@ body {
   font-size: 0.9rem;
 }
 
+/* Estilos del scrollbar para Chrome, Edge, Safari */
+#terminal-output::-webkit-scrollbar {
+  width: 8px;
+}
+
+#terminal-output::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+#terminal-output::-webkit-scrollbar-thumb {
+  background: #00f6ff;
+  border-radius: 4px;
+}
+
+#terminal-output::-webkit-scrollbar-thumb:hover {
+  background: #1affff;
+}
+
+/* Estilos del scrollbar para Firefox */
+#terminal-output {
+  scrollbar-color: #00f6ff #050505;
+  scrollbar-width: thin;
+}
+
 .terminal-input {
   display: flex;
   align-items: center;
