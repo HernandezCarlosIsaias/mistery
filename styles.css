@@ -4,24 +4,41 @@
 }
 
 /*-- MOBILE FIRST --*/
-.navbar {
-  display: flex;
-  background-color: #333;
-  margin: 0;
-  color: white;
-  padding: 1rem;
-  grid-area: navbar;
-}
-
 body{
   display: grid;
   grid-template-areas: 
     "navbar"
     "main"
 }
-.red-social-button {
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  margin: 0;
+  color: white;
+  grid-area: navbar;
+  padding-right: 12px;
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+.logo-icon{
+  height: 70px;
+  width: auto;
+}
+.title{
+  font-size: 1em;
+}
+.red-social-container{
+  display: flex;
+  align-items: center;
+}
+.red-social-icon {
   width: 32px;
   height: 32px;
-  padding: 4px;      
-  margin-left: 10px;
+  padding: 4px;   
+  margin-left: 5px;
+  margin-right: 5px;
 }
