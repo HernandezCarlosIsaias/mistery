@@ -2,3 +2,26 @@
   box-sizing: border-box;
   font-family: 'Courier New', monospace;
 }
+
+/*-- MOBILE FIRST --*/
+.navbar {
+  display: flex;
+  background-color: #333;
+  margin: 0;
+  color: white;
+  padding: 1rem;
+  grid-area: navbar;
+}
+
+body{
+  display: grid;
+  grid-template-areas: 
+    "navbar"
+    "main"
+}
+.red-social-button {
+  width: 32px;
+  height: 32px;
+  padding: 4px;      
+  margin-left: 10px;
+}
