@@ -197,6 +197,34 @@ main {
   object-fit: contain;
 }
 
+.inscription-form{
+  cursor: pointer;
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-image: linear-gradient(45deg,#3624dc, #3823d2, #861ea1, #d02569, #e4173e, #de1c37, #ff6641);
+  color: white;
+  padding: 12px 36px;
+  text-decoration: none;
+  font-weight: bold;
+  
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  border-image: linear-gradient(25deg, #8cccff, #3b27b9, #911d9a,#911d9a,#e54c7d,#ffc255) 1;
+  box-shadow: 
+  10px -10px 30px -10px #fa0000fd,
+  -20px 10px 30px -10px #000bab;
+
+
+  transition: background-image 0.3s ease;
+}
+
+.inscription-form:hover {
+  background-image: linear-gradient(to right, #e4173e, #d02569, #861ea1, #3823d2);
+}
+
 @media (600px <= width <= 1024px) {
   body {
     background-image:url('/img/background-codearla-tablet.jpg');
