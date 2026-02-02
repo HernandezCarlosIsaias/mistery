@@ -217,11 +217,12 @@ main {
   display:flex;
   flex-direction: column;
   width: 100vw;
-  text-align: center;
+  
 }
 
 .location h2{
   width: 85vw;
+  align-self: center;
   
 }
 
@@ -258,8 +259,6 @@ main {
   height: 380px;
   border: 0;
   border-radius: 16px;
-  
-  
   
 }
 
