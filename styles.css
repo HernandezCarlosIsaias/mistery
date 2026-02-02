@@ -4,9 +4,14 @@
 }
 
 body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto;
+  grid-template-areas: 
+    "navbar"
+    "main";
   margin: 0;
   min-height: 100dvh;
-  display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
@@ -14,7 +19,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #050505;
-  background-image: url("/img/background-codearla-mobile.jpg");
+  background-image: url("img/background-codearla-mobile.jpg");
 }
 
 .main {
@@ -68,8 +73,67 @@ body {
     );
 }
 
+main {
+  grid-area: main;
+  margin: 3rem 0 0 0;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  margin: 0;
+  color: white;
+  padding-top: 44px;
+  padding-right: 12px;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon{
+  height: 70px;
+  width: auto;
+}
+
+.title{
+  font-size: 1.5rem;
+  background-clip: text;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #22D3EE, #7C3AED, #D946EF, #FACC15, #22D3EE);
+  color: transparent;
+  animation: lineal 3s linear infinite;
+}
+
+@keyframes lineal {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.red-social-container{
+  display: flex;
+  align-items: center;
+}
+
+.red-social-icon {
+  width: 32px;
+  height: 32px;
+  padding: 6px;   
+  margin-left: 5px;
+  margin-right: 5px; 
+}
+
 .codearla-info {
   width: 85dvw;
+  margin: auto;
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -77,12 +141,11 @@ body {
   overflow: hidden;
   border-radius: 40px;
   padding: 10px 20px;
-
-  border: 2px solid #7c3aed;
-  box-shadow:
-    0 0 25px #7c3aed,
-    0 0 25px #7c3aed,
-    inset 0 0 50px #7c3aed;
+  border: 2px solid #7C3AED;
+  box-shadow: 
+    0 0 25px #7C3AED,
+    0 0 25px #7C3AED,
+    inset 0 0 50px #7C3AED;
 }
 
 .codearla-info::before {
@@ -160,6 +223,98 @@ body {
 
 
 
+.sponsors {
+  width: 85dvw;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.sponsors h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sponsors > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.sponsors article {
+  grid-column: span 1;
+  aspect-ratio: 5/2;
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.sponsors article:nth-child(1) {
+  background-color: rgb(31, 106, 225, 0.5);
+}
+
+.sponsors article:nth-child(2) {
+  background-color: rgb(34, 211, 238, 0.5);
+}
+
+.sponsors article:nth-child(3) {
+  background-color: rgb(124, 58, 237, 0.5);
+}
+
+.sponsors article:hover {
+  filter: brightness(1.2); 
+  transform: translateY(-5px);
+}
+
+.sponsors img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.inscription-form{
+  cursor: pointer;
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-image: linear-gradient(45deg,#3624dc, #3823d2, #861ea1, #d02569, #e4173e, #de1c37, #ff6641);
+  background-repeat: no-repeat;
+  color: white;
+  padding: 12px 36px;
+  text-decoration: none;
+  font-weight: 600;
+  
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  border-image: linear-gradient(25deg, #8cccff, #3b27b9, #911d9a,#911d9a,#e54c7d,#ffc255) 1;
+  box-shadow: 
+  10px -10px 30px -10px #fa0000fd,
+  -20px 10px 30px -10px #000bab;
+
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inscription-form:hover {
+  background-image: linear-gradient(45deg, #ff6641, #de1c37, #e4173e, #d02569, #861ea1, #3823d2, #3624dc);
+  background-position: 100% 100%;
+
+  border-image: linear-gradient(25deg, #ffc255, #e54c7d, #911d9a, #3b27b9, #8cccff) 1;
+  box-shadow: 
+    -10px 10px 30px -10px #fa0000fd,
+    20px -10px 30px -10px #000bab;
+
+  transform: scale(1.05);
+  filter: brightness(1.5);
+}
 
 @media (600px <= width <= 1024px) {
   body {
@@ -176,6 +331,29 @@ body {
 
   .codearla-info p {
     font-size: 1.4rem;
+  }
+
+  .sponsors {
+    width: 75dvw;
+  }
+
+  .sponsors h2 {
+    font-size: 1.9rem;
+  }
+
+  .title{
+    font-size: 2rem;
+  }
+  
+  .red-social-icon {
+    width: 36px;
+    height: 36px;
+    padding: 4px;   
+    margin-left: 5px;
+    margin-right: 5px; 
+  }
+  .inscription-form{
+    padding: 12px 40px;
   }
 }
 
@@ -194,5 +372,37 @@ body {
 
   .codearla-info p {
     font-size: 1.8rem;
+  }
+  .title{
+    font-size: 2.25rem;
+  }
+
+  .sponsors {
+    width: 70dvw;
+  }
+
+  .sponsors h2 {
+    font-size: 2.4rem;
+  }
+
+  .sponsors div {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .sponsors article {
+    grid-column: span 2;
+    aspect-ratio: 5/2;
+    padding: 5px;
+  }
+
+  .red-social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 2px;   
+    margin-left: 10px;
+    margin-right: 10px; 
+  }
+  .inscription-form{
+    padding: 12px 40px;
   }
 }

@@ -1,42 +1,49 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Codear.la</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav class="navbar"></nav>
+<head>
+  <meta charset="UTF-8" />
+  <title>Codear.la</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="codear, codear.la, codearla, evento, programacion, espacio, charlas" />
+  <meta name="description" content="Sumate al espacio gratuito de programación para intercambiar ideas junto a personas que hablan tu mismo idioma." />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
 
-    <main class="main">
+    <div class="logo-container">
+      <img class="logo-icon" src="img/favicon.ico" alt="">
+      <h1 class="title">Codear.la</h1>
+    </div>
+
+    <div class="red-social-container">
+      <a target="_blank" href="https://www.instagram.com/codearlaoficial/">
+        <img class="red-social-icon" src="img/instagram.png" alt="link to instagram">
+      </a>
+      <a target="_blank" href="https://www.tiktok.com/@codearlaoficial">
+        <img class="red-social-icon" src="img/tik-tok.png" alt="link to tik-tok">
+      </a>
+    </div>
+    
+  </nav>
+  <main>
+
       <section class="timer contenedor">
         <p>Faltan:</p>
         <div id="timer" class="contador"></div>
       </section>
 
-      <section class="codearla-info">
-        <h2><span>¿Qué es Codearla?</span></h2>
-        <p>
-          Un encuentro impulsado entre quienes programamos, donde la tecnología
-          se comparte y la comunidad es protagonista.
-        </p>
-        <p>
-          Un evento gratuito que reúne charlas, experiencias sobre programación
-          y tecnología, con foco en el open source y el aprendizaje colectivo.
-        </p>
-        <p>
-          Codearla es más que un evento: es un espacio para conectar,
-          intercambiar ideas, junto a personas que hablan tu mismo idioma.
-        </p>
-      </section>
+    <section class="codearla-info">
+      <h2><span>¿Qué es Codearla?</span></h2>
+      <p>Un encuentro impulsado entre quienes programamos, donde la tecnología se comparte y la comunidad es protagonista.</p>
+      <p>Un evento gratuito que reúne charlas, experiencias sobre programación y tecnología, con foco en el open source y el aprendizaje colectivo.</p>
+      <p>Codearla es más que un evento: es un espacio para conectar, intercambiar ideas, junto a personas que hablan tu mismo idioma. </p>
+    </section>
+
 
       <section class="location">
         <h2>📍 Dónde Estamos?</h2>
@@ -59,6 +66,27 @@
       <button class="inscription-form"></button>
     </main>
 
-    <script src="script.js"></script>
-  </body>
+    </section>
+
+    <section class="sponsors">
+      <h2>Sponsors</h2>
+      <div>
+        <article>
+          <img src="img/sponsors/neps-sponsor.png" alt ="Slogan de Neps">
+        </article>
+        <article>
+          <img src="img/sponsors/breakpoint-sponsor.png" alt="Slogan de BreakPoint">
+        </article>
+        <article>
+          <img src="img/sponsors/itscordoba-sponsor.png" alt="Slogan de Instituto Técnico Superior Córdoba">
+        </article>
+      </div>
+    </section>
+
+    <button type="button" class="inscription-form">Inscribite</button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
