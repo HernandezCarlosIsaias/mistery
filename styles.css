@@ -22,22 +22,41 @@ body {
   background-image: url("img/background-codearla-mobile.jpg");
 }
 
-.main {
+main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
 }
 
-.contador {
-  font-size: 100px;
+.text-timer{
+  font-size:1.25rem;
+  margin: 0;
+}
+
+
+#count-timer {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
   
 }
-.contenedor {
+
+.timer {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  font-size: 1.25rem;
+  padding-bottom: 8px;
+  align-items: center;
+  width: 100vw;
+}
+
+.container-timer{
+  display: flex;
+  flex-direction: column;
+  position: relative;
   padding-bottom: 8px;
   color: aliceblue;
-  text-align: center;
+  align-items: center;
 }
 
 :root {
@@ -47,7 +66,7 @@ body {
   --orange-neon: #f97316;
 }
 
-.contenedor::after {
+.container-timer::after {
   content: "";
   position: absolute;
   left: 0;
@@ -56,19 +75,13 @@ body {
   height: 4px;
 
   background:
-    radial-gradient(
-      ellipse at center,
-      #0066ff 0%,
-      #0066ff 35%,
-      transparent 75%
-    ),
     linear-gradient(
       90deg,
       transparent 0%,
-      var(--blue-neon) 10%,
-      var(--violet-neon) 25%,
-      var(--pink-neon) 65%,
-      var(--orange-neon) 85%,
+      var(--blue-neon) 10%,var(--blue-neon) 25%,
+      var(--violet-neon) 25%,var(--violet-neon)50%,
+      var(--pink-neon) 50%,var(--pink-neon) 75%,
+      var(--orange-neon) 75%,var(--orange-neon) 90%,
       transparent 100%
     );
 }
@@ -200,25 +213,54 @@ main {
   font-weight: 500;
 }
 
-.location iframe {
-  width: 100%;
-  height: 380px;
-  border: 0;
-  border-radius: 16px;
+.location{
+  display:flex;
+  flex-direction: column;
+  width: 100vw;
+  text-align: center;
+}
+
+.location h2{
+  width: 85vw;
+  
+}
+
+.title-location {
+  background-image: linear-gradient(
+    to right,
+    #1f6ae1,
+    #22d3ee,
+    #7c3aed,
+    #d946ef,
+    #f97316,
+    #facc15
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  
 }
 
 .mapa-borde {
+  display: flex;
+  flex-direction: column;
+  width: 100dvw;
   padding: 4px;
   border-radius: 20px;
-  background: linear-gradient(
-    90deg,
-    #1f6ae1,
-    #7c3aed,
-    #d946ef
-  );
-  box-shadow:
-    0 0 15px rgba(124, 58, 237, .6),
-    0 0 30px rgba(217, 70, 239, .4);
+  align-items: center;
+}
+
+.mapa-borde iframe {
+  width: 90vw;
+  height: 380px;
+  border: 0;
+  border-radius: 16px;
+  
+  
+  
 }
 
 
@@ -318,7 +360,15 @@ main {
 
 @media (600px <= width <= 1024px) {
   body {
-    background-image: url("/img/background-codearla-tablet.jpg");
+    background-image: url("img/background-codearla-tablet.jpg");
+  }
+
+  .text-timer{
+    font-size: 2.4rem
+  }
+
+  #count-timer{
+    font-size: 4.8rem;
   }
 
   .codearla-info {
@@ -359,7 +409,15 @@ main {
 
 @media (width > 1024px) {
   body {
-    background-image: url("/img/background-codearla-desktop.jpg");
+    background-image: url("img/background-codearla-desktop.jpg");
+  }
+
+  .text-timer{
+    font-size: 3rem;
+  }
+
+  #count-timer{
+    font-size: 6rem;
   }
 
   .codearla-info {
@@ -377,9 +435,25 @@ main {
     font-size: 2.25rem;
   }
 
+  .location h2{
+    width: 70vw;
+  
+  }
+
+  .mapa-borde iframe {
+    display: block;
+    width: 70vw;
+    height: 380px;
+    border: 0;
+    border-radius: 16px;
+  }
+
+
   .sponsors {
     width: 70dvw;
+  
   }
+
 
   .sponsors h2 {
     font-size: 2.4rem;
