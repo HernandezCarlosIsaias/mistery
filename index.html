@@ -1,45 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Codear.la</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <nav class="navbar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Codear.la</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar"></nav>
 
-  </nav>
+    <main class="main">
+      <section class="timer contenedor">
+        <p>Faltan:</p>
+        <div id="timer" class="contador"></div>
+      </section>
 
-  <main>
+      <section class="codearla-info">
+        <h2><span>¿Qué es Codearla?</span></h2>
+        <p>
+          Un encuentro impulsado entre quienes programamos, donde la tecnología
+          se comparte y la comunidad es protagonista.
+        </p>
+        <p>
+          Un evento gratuito que reúne charlas, experiencias sobre programación
+          y tecnología, con foco en el open source y el aprendizaje colectivo.
+        </p>
+        <p>
+          Codearla es más que un evento: es un espacio para conectar,
+          intercambiar ideas, junto a personas que hablan tu mismo idioma.
+        </p>
+      </section>
 
-    <section class="timer">
+      <section class="location">
+        <h2>📍 Dónde Estamos?</h2>
 
-    </section>
+        <div  class="mapa-borde">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0954279628245!2d-64.23339299999999!3d-31.466561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3d31a67ede1%3A0x90d9136bad3104e!2sParque%20Educativo%20Sur!5e0!3m2!1ses-419!2sar!4v1769905289949!5m2!1ses-419!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        </div>
+      </section>
 
-    <section class="codearla-info">
-      <h2><span>¿Qué es Codearla?</span></h2>
-      <p>Un encuentro impulsado entre quienes programamos, donde la tecnología se comparte y la comunidad es protagonista.</p>
-      <p>Un evento gratuito que reúne charlas, experiencias sobre programación y tecnología, con foco en el open source y el aprendizaje colectivo.</p>
-      <p>Codearla es más que un evento: es un espacio para conectar, intercambiar ideas, junto a personas que hablan tu mismo idioma. </p>
-    </section>
+      <section class="sponsors"></section>
 
-    <section class="location">
+      <button class="inscription-form"></button>
+    </main>
 
-    </section>
-
-    <section class="sponsors">
-
-    </section>
-
-    <button class="inscription-form"></button>
-
-  </main>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
