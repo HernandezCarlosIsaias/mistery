@@ -47,7 +47,7 @@ main {
   position: relative;
   padding-bottom: 8px;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .container-timer{
@@ -216,14 +216,13 @@ main {
 .location{
   display:flex;
   flex-direction: column;
-  width: 100vw;
-  
+  width: 100%;
+  text-align: center;
 }
 
 .location h2{
   width: 85vw;
-  align-self: center;
-  
+  align-self: center;  
 }
 
 .title-location {
@@ -242,13 +241,12 @@ main {
   background-size: 100%;
   font-size: 1.4rem;
   font-weight: bold;
-  
 }
 
 .mapa-borde {
   display: flex;
   flex-direction: column;
-  width: 100dvw;
+  width: 100%;
   padding: 4px;
   border-radius: 20px;
   align-items: center;
@@ -259,10 +257,7 @@ main {
   height: 380px;
   border: 0;
   border-radius: 16px;
-  
 }
-
-
 
 .sponsors {
   width: 85dvw;
@@ -447,12 +442,9 @@ main {
     border-radius: 16px;
   }
 
-
   .sponsors {
     width: 70dvw;
-  
   }
-
 
   .sponsors h2 {
     font-size: 2.4rem;
