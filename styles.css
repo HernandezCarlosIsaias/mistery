@@ -144,7 +144,8 @@ main {
   margin-right: 5px; 
 }
 
-.codearla-info {
+.codearla-info,
+.sponsors {
   width: 85dvw;
   margin: auto;
   display: flex;
@@ -161,7 +162,8 @@ main {
     inset 0 0 50px #7C3AED;
 }
 
-.codearla-info::before {
+.codearla-info::before,
+.sponsors::before {
   content: "";
   position: absolute;
   top: 0;
@@ -177,7 +179,9 @@ main {
 }
 
 .codearla-info h2,
-.codearla-info p {
+.codearla-info p,
+.sponsors h2,
+.sponsors div {
   position: relative;
   z-index: 2;
 }
@@ -188,7 +192,8 @@ main {
   margin-bottom: 15px;
 }
 
-.codearla-info h2 span {
+.codearla-info h2 span,
+.sponsors h2 span {
   background-image: linear-gradient(
     to right,
     #1f6ae1,
@@ -211,6 +216,7 @@ main {
   font-size: 0.9rem;
   line-height: 1.6;
   font-weight: 500;
+  margin: 5px;
 }
 
 .location{
@@ -265,18 +271,16 @@ main {
   text-align: center;
 }
 
+.codearla-info h2,
 .sponsors h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  margin-top: 5px;
 }
 
-.sponsors > div {
+.sponsors div {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
+  padding-bottom: 10px;
 }
 
 .sponsors article {
@@ -369,8 +373,9 @@ main {
     width: 75dvw;
   }
 
-  .codearla-info h2 span {
-    font-size: 1.9rem;
+  .codearla-info h2 span,
+  .sponsors h2 span {
+    font-size: 2rem;
   }
 
   .codearla-info p {
@@ -379,10 +384,6 @@ main {
 
   .sponsors {
     width: 75dvw;
-  }
-
-  .sponsors h2 {
-    font-size: 1.9rem;
   }
 
   .title{
@@ -418,12 +419,13 @@ main {
     width: 70dvw;
   }
 
-  .codearla-info h2 span {
-    font-size: 2.4rem;
+  .codearla-info h2 span,
+  .sponsors h2 span {
+    font-size: 3.5rem;
   }
 
   .codearla-info p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .title{
     font-size: 2.25rem;
@@ -444,10 +446,6 @@ main {
 
   .sponsors {
     width: 70dvw;
-  }
-
-  .sponsors h2 {
-    font-size: 2.4rem;
   }
 
   .sponsors div {
