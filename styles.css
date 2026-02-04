@@ -404,8 +404,10 @@ main {
     margin-left: 5px;
     margin-right: 5px; 
   }
+
   .inscription-form{
-    padding: 12px 40px;
+    padding: 22px 50px;
+    font-size: medium;
   }
 }
 
@@ -485,7 +487,8 @@ main {
     margin-right: 10px; 
   }
   .inscription-form{
-    padding: 12px 40px;
+    padding: 25px 50px;
+    font-size: 1.2rem;
   }
 }
 
@@ -493,5 +496,10 @@ main {
   .codearla-info,
   .sponsors {
     width: 50dvw;
+  }
+
+  .inscription-form{
+    padding: 28px 56px;
+    font-size: 1.6rem;
   }
 }
