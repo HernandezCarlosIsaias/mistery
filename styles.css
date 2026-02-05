@@ -315,6 +315,14 @@ main {
   background-color: rgb(124, 58, 237, 0.5);
 }
 
+.sponsors article:nth-child(4) {
+  background-color: rgb(217, 70, 239, 0.5);
+}
+
+.sponsors article:nth-child(5) {
+  background-color: rgb(249, 115, 22, 0.5);
+}
+
 .sponsors article:hover {
   filter: brightness(1.2); 
   transform: translateY(-5px);
@@ -391,6 +399,16 @@ main {
 
   .sponsors {
     width: 75dvw;
+  }
+
+  .sponsors div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsors article:nth-child(5) {
+    grid-column: 1 / 3;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .title{
@@ -477,6 +495,14 @@ main {
     grid-column: span 2;
     aspect-ratio: 5/2;
     padding: 5px;
+  }
+
+  .sponsors article:nth-child(4) {
+    grid-column: 2/4;
+  }
+
+  .sponsors article:nth-child(5) {
+    grid-column: 4/6;
   }
 
   .red-social-icon {
