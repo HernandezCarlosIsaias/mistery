@@ -327,6 +327,10 @@ main {
   background-color: rgb(249, 115, 22, 0.5);
 }
 
+.sponsors article:nth-child(6) {
+  background-color: rgb(250, 204, 21, 0.5);
+}
+
 .sponsors article:hover {
   filter: brightness(1.2); 
   transform: translateY(-5px);
