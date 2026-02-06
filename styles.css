@@ -200,6 +200,7 @@ main {
 }
 
 .codearla-info h2 span,
+.location h2 span,
 .sponsors h2 span {
   background-image: linear-gradient(
     to right,
@@ -259,14 +260,15 @@ main {
 .mapa-borde {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 85dvw;
+  margin: 0 auto;
   padding: 4px;
   border-radius: 20px;
   align-items: center;
 }
 
 .mapa-borde iframe {
-  width: 90vw;
+  width: 100%;
   height: 380px;
   border: 0;
   border-radius: 16px;
@@ -279,6 +281,7 @@ main {
 }
 
 .codearla-info h2,
+.location h2,
 .sponsors h2 {
   margin-top: 5px;
 }
@@ -384,11 +387,13 @@ main {
     font-size: 4.8rem;
   }
 
-  .codearla-info {
+  .codearla-info,
+  .mapa-borde {
     width: 75dvw;
   }
 
   .codearla-info h2 span,
+  .location h2 span,
   .sponsors h2 span {
     font-size: 2rem;
   }
@@ -454,11 +459,13 @@ main {
     font-size: 6rem;
   }
 
-  .codearla-info {
+  .codearla-info,
+  .mapa-borde {
     width: 70dvw;
   }
 
   .codearla-info h2 span,
+  .location h2 span,
   .sponsors h2 span {
     font-size: 3.5rem;
   }
@@ -477,7 +484,7 @@ main {
 
   .mapa-borde iframe {
     display: block;
-    width: 70vw;
+    width: 100%;
     height: 380px;
     border: 0;
     border-radius: 16px;
@@ -520,7 +527,8 @@ main {
 
 @media (width >= 1440px) {
   .codearla-info,
-  .sponsors {
+  .sponsors,
+  .mapa-borde {
     width: 50dvw;
   }
 
