@@ -349,23 +349,16 @@ main {
   padding: 12px 36px;
   text-decoration: none;
   font-weight: 600;
-  
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 8px;
-  border-image: linear-gradient(25deg, #8cccff, #3b27b9, #911d9a,#911d9a,#e54c7d,#ffc255) 1;
   box-shadow: 
   10px -10px 30px -10px #fa0000fd,
   -20px 10px 30px -10px #000bab;
-
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 20px;
 }
 
 .inscription-form:hover {
   background-image: linear-gradient(45deg, #ff6641, #de1c37, #e4173e, #d02569, #861ea1, #3823d2, #3624dc);
   background-position: 100% 100%;
-
-  border-image: linear-gradient(25deg, #ffc255, #e54c7d, #911d9a, #3b27b9, #8cccff) 1;
   box-shadow: 
     -10px 10px 30px -10px #fa0000fd,
     20px -10px 30px -10px #000bab;
@@ -534,6 +527,6 @@ main {
 
   .inscription-form{
     padding: 28px 56px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
