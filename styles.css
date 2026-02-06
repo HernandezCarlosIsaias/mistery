@@ -105,7 +105,7 @@ main {
   left: 0;
   right: 0;
   padding: 2.5px;
-  background-color: #050505;
+  background-color: #000000;
   z-index: 100;
 }
 
@@ -418,7 +418,7 @@ footer {
   }
 
   .title{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   
   .red-social-icon {
@@ -431,8 +431,8 @@ footer {
   }
 
   .inscription-form{
-    padding: 22px 50px;
-    font-size: medium;
+    padding: 12px 38px;
+    font-size: 1.2rem;
   }
 }
 
@@ -475,8 +475,9 @@ footer {
   .codearla-info p {
     font-size: 2rem;
   }
+
   .title{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .location h2{
@@ -513,9 +514,10 @@ footer {
     margin-right: 10px;
     border-radius: 50%;
   }
+
   .inscription-form{
-    padding: 25px 50px;
-    font-size: 1.2rem;
+    padding: 17px 43px;
+    font-size: 1.4rem;
   }
 }
 
@@ -528,6 +530,10 @@ footer {
 
   .inscription-form{
     padding: 9px 40px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+  }
+
+  .title {
+    font-size: 2.3rem;
   }
 }
