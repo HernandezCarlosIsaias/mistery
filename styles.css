@@ -6,10 +6,11 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px auto;
+  grid-template-rows: 60px 1fr auto;
   grid-template-areas: 
     "navbar"
-    "main";
+    "main"
+    "footer";
   margin: 0;
   min-height: 100dvh;
   align-items: center;
@@ -352,7 +353,7 @@ main {
   box-shadow: 
   10px -10px 30px -10px #fa0000fd,
   -20px 10px 30px -10px #000bab;
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), filter 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1), background-position 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 20px;
 }
 
@@ -365,6 +366,14 @@ main {
 
   transform: scale(1.05);
   filter: brightness(1.5);
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 @media (600px <= width < 1024px) {

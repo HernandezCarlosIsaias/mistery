@@ -22,3 +22,20 @@ function updateTimer() {
 
 const interval = setInterval(updateTimer, 1000);
 updateTimer();
+
+window.addEventListener("scroll", () => {
+  const footer = document.querySelector("footer");
+  const button = document.querySelector(".inscription-form");
+
+  if (footer && button) {
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (footerRect.top < windowHeight) {
+      const offset = windowHeight - footerRect.top + 20;
+      button.style.bottom = `${offset}px`;
+    } else {
+      button.style.bottom = "20px";
+    }
+  }
+});
