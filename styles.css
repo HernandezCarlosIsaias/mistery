@@ -569,6 +569,10 @@ footer {
     grid-template-columns: repeat(6, 1fr);
   }
 
+  .speakers article {
+    grid-column: span 2;
+  }
+
   .speakers article:nth-child(1) {
     grid-column: 2 / 4;
   }
