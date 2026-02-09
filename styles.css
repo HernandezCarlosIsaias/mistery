@@ -249,9 +249,34 @@ main {
   text-align: center;
 }
 
-.location h2{
-  width: 85vw;
-  align-self: center;  
+.location-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85dvw;
+  align-self: center;
+}
+
+.logo-parque {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.logo-parque img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.logo-parque article {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  border-radius: 15px;
+  padding: 15px;
+  color: #ffffff;
 }
 
 .title-location {
@@ -276,6 +301,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 85dvw;
+  height: auto;
   margin: 0 auto;
   padding: 4px;
   border-radius: 20px;
@@ -430,6 +456,16 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .location-content {
+    width: 75dvw;
+    flex-direction: row;
+  }
+
+  .mapa-borde,
+  .logo-parque {
+    flex: 1;
+  }
+
   .title{
     font-size: 1.7rem;
   }
@@ -493,9 +529,15 @@ footer {
     font-size: 2rem;
   }
 
-  .location h2{
-    width: 70vw;
-  
+  .location-content {
+    width: 70dvw;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .mapa-borde,
+  .logo-parque {
+    flex: 1;
   }
 
   .mapa-borde iframe {
@@ -537,7 +579,8 @@ footer {
 @media (width >= 1440px) {
   .codearla-info,
   .sponsors,
-  .mapa-borde {
+  .mapa-borde,
+  .location-content {
     width: 50dvw;
   }
 
