@@ -37,22 +37,72 @@ body::before {
 }
 
 main {
+  grid-area: main;
+  margin: 3rem 0 0 0;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
 
-.text-timer{
-  font-size:1.25rem;
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
   margin: 0;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5px;
+  background-color: #000000;
+  z-index: 100;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
 
-#count-timer {
-  margin: 0;
-  padding: 0;
-  font-size: 2.5rem;
-  
+.logo-icon {
+  height: 70px;
+  width: auto;
+}
+
+.title {
+  font-family: "Orbitron";
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-clip: text;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #22D3EE, #7C3AED, #D946EF, #FACC15, #22D3EE);
+  color: transparent;
+  animation: lineal 3s linear infinite;
+}
+
+@keyframes lineal {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.red-social-container {
+  display: flex;
+  align-items: center;
+}
+
+.red-social-icon {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
 }
 
 .timer {
@@ -64,7 +114,7 @@ main {
   width: 100%;
 }
 
-.container-timer{
+.container-timer {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -87,89 +137,32 @@ main {
   right: 0;
   bottom: 0;
   height: 4px;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--blue-neon) 10%,var(--blue-neon) 25%,
-      var(--violet-neon) 25%,var(--violet-neon)50%,
-      var(--pink-neon) 50%,var(--pink-neon) 75%,
-      var(--orange-neon) 75%,var(--orange-neon) 90%,
-      transparent 100%
-    );
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--blue-neon) 10%,var(--blue-neon) 25%,
+    var(--violet-neon) 25%,var(--violet-neon)50%,
+    var(--pink-neon) 50%,var(--pink-neon) 75%,
+    var(--orange-neon) 75%,var(--orange-neon) 90%,
+    transparent 100%
+  );
 }
 
-main {
-  grid-area: main;
-  margin: 3rem 0 0 0;
-}
-
-.navbar {
-  grid-area: navbar;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
+.text-timer {
+  font-size: 1.25rem;
   margin: 0;
-  color: white;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 2.5px;
-  background-color: #000000;
-  z-index: 100;
 }
 
-.logo-container{
-  display: flex;
-  align-items: center;
-}
-
-.logo-icon{
-  height: 70px;
-  width: auto;
-}
-
-.title{
-  font-family: "Orbitron";
-  font-size: 1.5rem;
-  font-weight: bolder;
-  background-clip: text;
-  background-size: 200% auto;
-  background-image: linear-gradient(to right, #22D3EE, #7C3AED, #D946EF, #FACC15, #22D3EE);
-  color: transparent;
-  animation: lineal 3s linear infinite;
-}
-
-@keyframes lineal {
-  0% {
-    background-position: 0% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
-
-.red-social-container{
-  display: flex;
-  align-items: center;
-}
-
-.red-social-icon {
-  width: 35px;
-  height: 35px;
-  padding: 2px;   
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 50%;
+#count-timer {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
 }
 
 .codearla-info,
 .sponsors {
   width: 85dvw;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -208,6 +201,13 @@ main {
   z-index: 2;
 }
 
+.codearla-info h2,
+.speakers h2,
+.location h2,
+.sponsors h2 {
+  margin-top: 5px;
+}
+
 .codearla-info h2 {
   display: inline-block;
   text-align: center;
@@ -242,19 +242,20 @@ main {
   margin: 5px;
 }
 
-.location{
-  display:flex;
+.speakers,
+.location {
+  display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;
 }
 
-.location h2{
-  width: 85vw;
-  align-self: center;  
+.speakers h2 {
+  position: relative;
+  z-index: 2;
 }
 
-.title-location {
+.speakers h2 span {
   background-image: linear-gradient(
     to right,
     #1f6ae1,
@@ -270,6 +271,66 @@ main {
   background-size: 100%;
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+.speakers .speakers-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.speakers article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  background-image: url('img/speakers/speakersBackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 0;
+}
+
+.speakers img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.speakers h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.speakers .bio-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.speakers .bio-text p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.location h2 {
+  width: 85vw;
+  align-self: center;
 }
 
 .mapa-borde {
@@ -293,12 +354,6 @@ main {
   width: 85dvw;
   margin: 0 auto 3rem auto;
   text-align: center;
-}
-
-.codearla-info h2,
-.location h2,
-.sponsors h2 {
-  margin-top: 5px;
 }
 
 .sponsors div {
@@ -356,7 +411,7 @@ main {
   object-fit: contain;
 }
 
-.inscription-form{
+.inscription-form {
   cursor: pointer;
   z-index: 100;
   position: fixed;
@@ -381,7 +436,6 @@ main {
   box-shadow: 
     -10px 10px 30px -10px #fa0000fd,
     20px -10px 30px -10px #000bab;
-
   transform: scale(1.05);
   filter: brightness(1.5);
 }
@@ -399,16 +453,21 @@ footer {
     background-image: url("img/background-codearla-tablet.jpg");
   }
 
-  .text-timer{
+  .text-timer {
     font-size: 2.4rem
   }
 
-  #count-timer{
+  #count-timer {
     font-size: 4.8rem;
   }
 
+  .title {
+    font-size: 1.7rem;
+  }
+
   .codearla-info,
-  .mapa-borde {
+  .mapa-borde,
+  .sponsors {
     width: 75dvw;
   }
 
@@ -418,8 +477,20 @@ footer {
     font-size: 2rem;
   }
 
+  .speakers h2 span {
+    font-size: 2rem;
+  }
+
   .codearla-info p {
     font-size: 1.4rem;
+  }
+
+  .speakers .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .speakers article {
+    grid-column: span 1;
   }
 
   .sponsors {
@@ -430,20 +501,16 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .title{
-    font-size: 1.7rem;
-  }
-  
   .red-social-icon {
     width: 40px;
     height: 40px;
     padding: 2px;
     margin-left: 5px;
     margin-right: 5px;
-    border-radius: 50%; 
+    border-radius: 50%;
   }
 
-  .inscription-form{
+  .inscription-form {
     padding: 12px 38px;
     font-size: 1.2rem;
   }
@@ -466,16 +533,21 @@ footer {
     margin-top: 15px;
   }
 
-  .text-timer{
+  .text-timer {
     font-size: 3rem;
   }
 
-  #count-timer{
+  #count-timer {
     font-size: 6rem;
   }
 
+  .title {
+    font-size: 2rem;
+  }
+
   .codearla-info,
-  .mapa-borde {
+  .mapa-borde,
+  .sponsors {
     width: 70dvw;
   }
 
@@ -485,17 +557,32 @@ footer {
     font-size: 3.5rem;
   }
 
+  .speakers h2 span {
+    font-size: 3.5rem;
+  }
+
   .codearla-info p {
     font-size: 2rem;
   }
 
-  .title{
-    font-size: 2rem;
+  .speakers .speakers-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 
-  .location h2{
+  .speakers article:nth-child(1) {
+    grid-column: 2 / 4;
+  }
+
+  .speakers article:nth-child(2) {
+    grid-column: 4 / 6;
+  }
+
+  .speakers p {
+    font-size: 1rem;
+  }
+
+  .location h2 {
     width: 70vw;
-  
   }
 
   .mapa-borde iframe {
@@ -504,10 +591,6 @@ footer {
     height: 380px;
     border: 0;
     border-radius: 16px;
-  }
-
-  .sponsors {
-    width: 70dvw;
   }
 
   .sponsors div {
@@ -522,13 +605,11 @@ footer {
   .red-social-icon {
     width: 45px;
     height: 45px;
-    padding: 2px;   
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 50%;
   }
 
-  .inscription-form{
+  .inscription-form {
     padding: 17px 43px;
     font-size: 1.4rem;
   }
@@ -541,12 +622,29 @@ footer {
     width: 50dvw;
   }
 
-  .inscription-form{
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .inscription-form {
     padding: 9px 40px;
     font-size: 1.7rem;
   }
 
-  .title {
-    font-size: 2.3rem;
+  .speakers .speakers-grid {
+    max-width: 1700px;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .speakers article {
+    grid-column: span 2;
+  }
+
+  .speakers article:nth-child(1) {
+    grid-column: 3 / 5;
+  }
+
+  .speakers article:nth-child(2) {
+    grid-column: 5 / 7;
   }
 }
