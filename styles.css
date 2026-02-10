@@ -261,7 +261,7 @@ main {
 .logo-parque {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 1px;
   align-items: center;
   max-width: 350px;
   height: auto;
@@ -275,35 +275,16 @@ main {
   margin: 0;
   color: #ffffff;
   width: 100%;
+  margin-top: 15px;
 }
 
-.title-cole::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  background:
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--blue-neon) 10%,var(--blue-neon) 25%,
-      var(--violet-neon) 25%,var(--violet-neon)50%,
-      var(--pink-neon) 50%,var(--pink-neon) 75%,
-      var(--orange-neon) 75%,var(--orange-neon) 90%,
-      transparent 100%
-    );
-}
 
-.logo-parque article:first-of-type {
+.logo-parque article:last-of-type {
   position: relative;
   padding-bottom: 10px;
-  margin-bottom: 10px;
 }
 
-.logo-parque article:first-of-type::after {
+.logo-parque article:last-of-type::after {
   content: "";
   position: absolute;
   left: 0;
@@ -322,24 +303,6 @@ main {
     );
 }
 
-.logo-parque::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  background:
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--blue-neon) 10%,var(--blue-neon) 25%,
-      var(--violet-neon) 25%,var(--violet-neon)50%,
-      var(--pink-neon) 50%,var(--pink-neon) 75%,
-      var(--orange-neon) 75%,var(--orange-neon) 90%,
-      transparent 100%
-    );
-}
 
 .logo-parque img {
   width: 100%;
@@ -347,6 +310,34 @@ main {
   border-radius: 15px;
   max-height: 190px;
   object-fit: contain;
+}
+
+.title-direccion {
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #ffffff;
+  width: 100%;
+}
+
+.title-direccion::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--blue-neon) 10%,var(--blue-neon) 25%,
+      var(--violet-neon) 25%,var(--violet-neon)50%,
+      var(--pink-neon) 50%,var(--pink-neon) 75%,
+      var(--orange-neon) 75%,var(--orange-neon) 90%,
+      transparent 100%
+    );
 }
 
 .logo-parque article {
@@ -361,7 +352,7 @@ main {
 
 .logo-parque article i {
   font-size: 24px;
-  color: #6dc7db;
+  color: #f5e15c;
   flex-shrink: 0;
 }
 
