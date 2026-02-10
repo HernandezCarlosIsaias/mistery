@@ -553,33 +553,26 @@ main {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 1px solid rgba(124, 58, 237, 0.3);
   transition: transform 0.3s ease, background-color 0.3s;
 }
 
-.sponsors article:nth-child(1),
-.sponsors article:nth-child(7) {
-  background-color: rgb(31, 106, 225, 0.5);
+.sponsors article:nth-child(1) {
+  background-color: rgb(77, 77, 77);
 }
 
-.sponsors article:nth-child(2) {
-  background-color: rgb(34, 211, 238, 0.5);
+.sponsors article:nth-child(2),
+.sponsors article:nth-child(5),
+.sponsors article:nth-child(4){
+  background-color: rgb(243, 243, 243);
 }
 
 .sponsors article:nth-child(3) {
-  background-color: rgb(124, 58, 237, 0.5);
+  background-color: rgb(24, 91, 153);
 }
 
-.sponsors article:nth-child(4) {
-  background-color: rgb(217, 70, 239, 0.5);
-}
-
-.sponsors article:nth-child(5) {
-  background-color: rgb(249, 115, 22, 0.5);
-}
-
-.sponsors article:nth-child(6) {
-  background-color: rgb(250, 204, 21, 0.5);
+.sponsors article:nth-child(6),
+.sponsors article:nth-child(7){
+  background-color: rgb(0, 0, 0);
 }
 
 .sponsors article:hover {
