@@ -320,6 +320,113 @@ main {
   text-align: center;
 }
 
+.location-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85dvw;
+  align-self: center;
+  align-items: center;
+}
+
+.logo-parque {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  align-items: center;
+  max-width: 350px;
+  height: auto;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.title-cole {
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #ffffff;
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+.logo-parque article:last-of-type {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.logo-parque article:last-of-type::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--blue-neon) 10%,var(--blue-neon) 25%,
+      var(--violet-neon) 25%,var(--violet-neon)50%,
+      var(--pink-neon) 50%,var(--pink-neon) 75%,
+      var(--orange-neon) 75%,var(--orange-neon) 90%,
+      transparent 100%
+    );
+}
+
+
+.logo-parque img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.title-direccion {
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #ffffff;
+  width: 100%;
+}
+
+.title-direccion::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--blue-neon) 10%,var(--blue-neon) 25%,
+      var(--violet-neon) 25%,var(--violet-neon)50%,
+      var(--pink-neon) 50%,var(--pink-neon) 75%,
+      var(--orange-neon) 75%,var(--orange-neon) 90%,
+      transparent 100%
+    );
+}
+
+.logo-parque article {
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+}
+
+.logo-parque article i {
+  font-size: 24px;
+  color: #f5e15c;
+  flex-shrink: 0;
+}
+
 .speakers h2 {
   position: relative;
   z-index: 2;
@@ -410,6 +517,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 85dvw;
+  height: auto;
   margin: 0 auto;
   padding: 4px;
   border-radius: 20px;
@@ -590,6 +698,22 @@ footer {
     grid-column: 2 / 4;
   }
 
+  .location-content {
+    width: 75dvw;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .mapa-borde,
+  .logo-parque {
+    flex: 1;
+  }
+
+  .title{
+    font-size: 1.7rem;
+  }
+  
   .red-social-icon {
     width: 40px;
     height: 40px;
@@ -688,6 +812,19 @@ footer {
     grid-template-columns: repeat(6, 1fr);
   }
 
+  .location-content {
+    width: 70dvw;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .mapa-borde,
+  .logo-parque {
+    flex: 1;
+    display: flex;
+  }
+
   .speakers article {
     grid-column: span 2;
   }
@@ -754,7 +891,8 @@ footer {
 @media (width >= 1440px) {
   .codearla-info,
   .sponsors,
-  .mapa-borde {
+  .mapa-borde,
+  .location-content {
     width: 50dvw;
   }
 

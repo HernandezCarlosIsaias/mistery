@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css?v=1.0" />
 </head>
 <body>
@@ -87,21 +88,36 @@
     <section id="location" class="location">
       <h2><span>Ubicación</span></h2>
 
-      <div class="mapa-borde">
-          <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0954279628245!2d-64.23339299999999!3d-31.466561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3d31a67ede1%3A0x90d9136bad3104e!2sParque%20Educativo%20Sur!5e0!3m2!1ses-419!2sar!4v1769905289949!5m2!1ses-419!2sar"
-          width="600"
-          height="450"
-          style="border:0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+      <div class="location-content">
+        <div class="mapa-borde">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0954279628245!2d-64.23339299999999!3d-31.466561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3d31a67ede1%3A0x90d9136bad3104e!2sParque%20Educativo%20Sur!5e0!3m2!1ses-419!2sar!4v1769905289949!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border:0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            
+            <a href="https://www.google.com/maps/place/Parque+Educativo+Sur/@-31.466561,-64.233393,17z"
+            target="_blank"
+            class="map-link"></a>
+        </div>
 
-          
-          <a href="https://www.google.com/maps/place/Parque+Educativo+Sur/@-31.466561,-64.233393,17z"
-          target="_blank"
-          class="map-link"></a>
+        <div class="logo-parque">
+          <img src="img/parque-educativo-sur.png" alt="">
+          <h4 class="title-direccion">Rio Pinto esq. Ballesteros.</h4>
+          <h4 class="title-cole">Colectivos</h4>
+          <article>
+            <i class="fa-solid fa-bus"></i>
+            <p>A1 - En la puerta.</p>
+          </article>
+          <article>
+            <i class="fa-solid fa-bus"></i>
+            <p>30 - 31 - 32 - Cercanías.</p>
+          </article>
+        </div>
       </div>
     </section>
 
