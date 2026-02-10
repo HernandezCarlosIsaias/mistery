@@ -49,7 +49,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background: #000000e7;
   margin: 0;
   color: white;
   position: sticky;
@@ -57,10 +57,80 @@ main {
   left: 0;
   right: 0;
   padding: 2.5px;
-  background-color: #000000;
   z-index: 100;
 }
+#codearla-info,
+#sponsors,
+#speakers,
+#location {
+  scroll-margin-top: 130px;
+}
 
+.burguer-button {
+  display: block;
+  margin-left: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 101;
+}
+.burguer-button:hover {
+  color: #7C3AED;
+}
+
+.nav-elements {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease;
+  background: #00000088;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  z-index: 99;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-elements.active {
+  max-height: 400px;
+  opacity: 1;
+}
+.nav-elements li {
+  list-style: none;
+  margin: 10px 0;
+}
+.nav-elements a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  margin-left: 20px;
+}
+.nav-elements.active li {
+  list-style: none;
+  margin: 10px 0;
+}
+.nav-elements.active a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  margin-left: 20px;
+}
+.nav-elements.active a:hover {
+  color: #7C3AED;
+  filter: brightness(1.2);
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -464,7 +534,6 @@ footer {
   .title {
     font-size: 1.7rem;
   }
-
   .codearla-info,
   .mapa-borde,
   .sponsors {
@@ -520,7 +589,37 @@ footer {
   body {
     background-image: url("img/background-codearla-desktop.jpg");
   }
-
+  .burguer-button {
+    display: none;
+  }
+  .nav-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position:static;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+    background: none;
+    backdrop-filter: none;
+    padding: 0;
+    width: 700px;
+    z-index: 99;
+    list-style: none;
+  }
+  .nav-elements li {
+    list-style: none;
+  }
+  .nav-elements a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  .nav-elements a:hover {
+    color: #7C3AED;
+  }
   .logo-icon {
     transition: transform 0.5s ease-in-out;
   }

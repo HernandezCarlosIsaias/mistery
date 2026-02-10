@@ -39,3 +39,16 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+// Mobile menu toggle
+const burguerButton = document.querySelector(".burguer-button");
+const navElements = document.querySelector(".nav-elements");
+
+burguerButton.addEventListener("click", () => {
+  navElements.classList.toggle("active");
+});
+document.querySelectorAll('.nav-elements a').forEach(link => {
+  link.addEventListener('click', () => {
+    navElements.classList.remove('active');
+  });
+});
