@@ -255,28 +255,114 @@ main {
   gap: 20px;
   width: 85dvw;
   align-self: center;
+  align-items: center;
 }
 
 .logo-parque {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 8px;
   align-items: center;
+  max-width: 350px;
+  height: auto;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.title-cole {
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #ffffff;
+  width: 100%;
+}
+
+.title-cole::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--blue-neon) 10%,var(--blue-neon) 25%,
+      var(--violet-neon) 25%,var(--violet-neon)50%,
+      var(--pink-neon) 50%,var(--pink-neon) 75%,
+      var(--orange-neon) 75%,var(--orange-neon) 90%,
+      transparent 100%
+    );
+}
+
+.logo-parque article:first-of-type {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.logo-parque article:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--blue-neon) 10%,var(--blue-neon) 25%,
+      var(--violet-neon) 25%,var(--violet-neon)50%,
+      var(--pink-neon) 50%,var(--pink-neon) 75%,
+      var(--orange-neon) 75%,var(--orange-neon) 90%,
+      transparent 100%
+    );
+}
+
+.logo-parque::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--blue-neon) 10%,var(--blue-neon) 25%,
+      var(--violet-neon) 25%,var(--violet-neon)50%,
+      var(--pink-neon) 50%,var(--pink-neon) 75%,
+      var(--orange-neon) 75%,var(--orange-neon) 90%,
+      transparent 100%
+    );
 }
 
 .logo-parque img {
   width: 100%;
   height: auto;
   border-radius: 15px;
+  max-height: 190px;
+  object-fit: contain;
 }
 
 .logo-parque article {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(124, 58, 237, 0.3);
-  border-radius: 15px;
-  padding: 15px;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+}
+
+.logo-parque article i {
+  font-size: 24px;
+  color: #6dc7db;
+  flex-shrink: 0;
 }
 
 .title-location {
@@ -459,6 +545,8 @@ footer {
   .location-content {
     width: 75dvw;
     flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
   }
 
   .mapa-borde,
@@ -533,11 +621,13 @@ footer {
     width: 70dvw;
     flex-direction: row;
     gap: 30px;
+    align-items: flex-start;
   }
 
   .mapa-borde,
   .logo-parque {
     flex: 1;
+    display: flex;
   }
 
   .mapa-borde iframe {
@@ -593,3 +683,4 @@ footer {
     font-size: 2.3rem;
   }
 }
+
