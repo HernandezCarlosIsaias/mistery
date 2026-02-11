@@ -48,7 +48,23 @@ burguerButton.addEventListener("click", () => {
   navElements.classList.toggle("active");
 });
 document.querySelectorAll('.nav-elements a').forEach(link => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', (e) => {
     navElements.classList.remove('active');
+
+    const targetId = link.getAttribute('href');
+    if (targetId.startsWith('#')) {
+      e.preventDefault();
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - navbarHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }
   });
 });
