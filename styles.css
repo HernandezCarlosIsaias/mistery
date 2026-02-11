@@ -626,6 +626,67 @@ footer {
   padding: 20px;
 }
 
+.redes-sociales {
+  width: 85dvw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  padding: 10px 20px;
+  border: 2px solid #7C3AED;
+  box-shadow: 
+    0 0 25px #7C3AED,
+    0 0 25px #7C3AED,
+    inset 0 0 50px #7C3AED;
+  text-align: center;
+}
+
+.redes-sociales h2,
+.redes-sociales div {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.redes-sociales h2 span {
+  background-image: linear-gradient(
+    to right,
+    #1f6ae1,
+    #22d3ee,
+    #7c3aed,
+    #d946ef,
+    #f97316,
+    #facc15
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.redes-sociales::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("img/background-section-compress.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
 @media (600px <= width < 1024px) {
   body {
     background-image: url("img/background-codearla-tablet.jpg");
@@ -644,13 +705,15 @@ footer {
   }
   .codearla-info,
   .mapa-borde,
-  .sponsors {
+  .sponsors,
+  .redes-sociales {
     width: 75dvw;
   }
 
   .codearla-info h2 span,
   .location h2 span,
-  .sponsors h2 span {
+  .sponsors h2 span,
+  .redes-sociales h2 span {
     font-size: 2rem;
   }
 
@@ -786,7 +849,8 @@ footer {
 
   .codearla-info,
   .mapa-borde,
-  .sponsors {
+  .sponsors,
+  .redes-sociales {
     width: 70dvw;
   }
 
@@ -883,74 +947,17 @@ footer {
     font-size: 1.4rem;
   }
 
-  
-.redes-sociales {
-  width: 50dvw;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: black;
-  position: relative;
-  overflow: hidden;
-  border-radius: 40px;
-  padding: 10px 20px;
-  border: 2px solid #7C3AED;
-  box-shadow: 
-    0 0 25px #7C3AED,
-    0 0 25px #7C3AED,
-    inset 0 0 50px #7C3AED;
-  text-align: center;
-}
-
-.redes-sociales h2,
-.redes-sociales div {
-  position: relative;
-  z-index: 2;
-  color: white;
-}
-
-.redes-sociales h2 span {
-  background-image: linear-gradient(
-    to right,
-    #1f6ae1,
-    #22d3ee,
-    #7c3aed,
-    #d946ef,
-    #f97316,
-    #facc15
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: 100%;
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-
-.redes-sociales::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("img/background-section-compress.jpg");
-  background-size: cover;
-  background-position: center;
-  filter: blur(2px);
-  opacity: 0.5;
-  z-index: 1;
-}
+  .redes-sociales h2 span {
+    font-size: 3.5rem;
+  }
 }
 
 @media (width >= 1440px) {
   .codearla-info,
   .sponsors,
   .mapa-borde,
-  .location-content {
+  .location-content,
+  .redes-sociales{
     width: 50dvw;
   }
 
