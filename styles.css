@@ -337,18 +337,87 @@ main {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 15px;
   margin: 10px;
   width: auto;
+  backdrop-filter: blur(20px);
+  filter: brightness(1);
+}
+.development{
+  background: radial-gradient(
+    circle at 50% 30%, 
+    #00000029 30%,
+    #1f69e1e8 100%
+    );
+  transition: filter 0.3s ease;
+}
+.data-science{
+  background: radial-gradient(
+    circle at 50% 30%, 
+    #00000029 30%,
+    #d525f0 100%
+    );
+  transition: filter 0.3s ease;
+}
+.devops{
+  background: radial-gradient(
+    circle at 50% 30%, 
+    #00000029 30%,
+    #22d3ee 100%
+    );
+  transition: filter 0.3s ease;
+}
+.ux{
+  background: radial-gradient(
+    circle at 50% 30%, 
+    #00000029 30%,
+    #7c3aed 100%
+    );
+  transition: filter 0.3s ease;
+}
+.product{
+  background: radial-gradient(
+    circle at 50% 30%, 
+    #00000029 30%,
+    #f97316 100%
+    );
+  transition: filter 0.3s ease;
+}
+.qa{
+  background: radial-gradient(
+    circle at 50% 30%, 
+    #00000029 30%,
+    #f9ea16 100%
+    );
+  transition: filter 0.3s ease;
+}
+.maker{
+  background: radial-gradient(
+    circle at 50% 30%, 
+    #00000029 30%,
+    #4716f9 100%
+    );
+  transition: filter 0.3s ease;
+}
+.open-source{
+  background: radial-gradient(
+    circle at 50% 30%, 
+    #00000029 30%,
+    #16f92d8e 100%
+    );
+  transition: filter 0.3s ease;
+}
+.topic-card:hover{
+  filter: brightness(1.5);
+  border: 2px solid rgba(255, 255, 255, 0.928);
 }
 .topic-img{
   width: 70%;
   height: auto;
 }
 .topic-card h3{
-  color: rgba(255, 255, 255, 0.633);
+  color: rgba(255, 255, 255, 0.518);
 }
 
 .location-content {
@@ -742,10 +811,20 @@ footer {
   .codearla-info h2 span,
   .location h2 span,
   .sponsors h2 span,
-  .redes-sociales h2 span {
+  .topics h2 span {
+
     font-size: 2rem;
   }
-
+  .topics-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .topic-card{
+    min-width: 150px;
+    margin: 0;
+  }
   .speakers h2 span {
     font-size: 2rem;
   }
@@ -885,10 +964,23 @@ footer {
 
   .codearla-info h2 span,
   .location h2 span,
-  .sponsors h2 span{
+  .sponsors h2 span,
+  .topics h2 span {
     font-size: 3.5rem;
   }
 
+  .topics-grid{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    justify-content:center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+  .topic-card{
+    min-width: 200px;
+  }
   .speakers h2 span {
     font-size: 3.5rem;
   }
