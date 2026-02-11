@@ -314,11 +314,39 @@ main {
 }
 
 .speakers,
-.location {
+.location,
+.topics {
   display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;
+}
+
+.topics-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.topic-card{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  width: auto;
+}
+.topic-img{
+  width: 70%;
+  height: auto;
+}
+.topic-card h3{
+  color: rgba(255, 255, 255, 0.633);
 }
 
 .location-content {
@@ -433,7 +461,8 @@ main {
   z-index: 2;
 }
 
-.speakers h2 span {
+.speakers h2 span,
+.topics h2 span {
   background-image: linear-gradient(
     to right,
     #1f6ae1,
