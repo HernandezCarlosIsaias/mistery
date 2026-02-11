@@ -62,13 +62,15 @@ main {
 #codearla-info,
 #sponsors,
 #speakers,
-#location {
+#location 
+#redes-sociales {
   scroll-margin-top: 130px;
 }
 
 .burguer-button {
   display: block;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: 20px;
   background: none;
   border: none;
   color: white;
@@ -85,8 +87,8 @@ main {
   flex-direction: column;
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+  left: auto;
+  right: 10px;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -97,7 +99,6 @@ main {
   z-index: 99;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 .nav-elements.active {
   max-height: 400px;
@@ -167,11 +168,11 @@ main {
 }
 
 .red-social-icon {
-  width: 35px;
-  height: 35px;
-  padding: 2px;
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 50%;
 }
 
@@ -287,7 +288,8 @@ main {
 
 .codearla-info h2 span,
 .location h2 span,
-.sponsors h2 span {
+.sponsors h2 span,
+.red-social h2 span {
   background-image: linear-gradient(
     to right,
     #1f6ae1,
@@ -880,54 +882,8 @@ footer {
     padding: 17px 43px;
     font-size: 1.4rem;
   }
-}
 
-@media (width >= 1440px) {
-  .codearla-info,
-  .sponsors,
-  .mapa-borde,
-  .location-content {
-    width: 50dvw;
-  }
-
-  .title {
-    font-size: 2.3rem;
-  }
-
-  .inscription-form {
-    padding: 9px 40px;
-    font-size: 1.7rem;
-  }
-
-  .speakers .speakers-grid {
-    max-width: 1700px;
-    grid-template-columns: repeat(8, 1fr);
-  }
-
-  .speakers article {
-    grid-column: span 2;
-  }
-
-  .speakers h3 {
-    font-size: 1.9rem;
-  }
-
-  .speakers .bio-text p {
-    font-size: 1.2rem;
-  }
-
-  .speakers article:nth-child(1) {
-    margin-right: 10px;
-    grid-column: 3 / 5;
-  }
-
-  .speakers article:nth-child(2) {
-    margin-left: 10px;
-    grid-column: 5 / 7;
-  }
-}
-
-
+  
 .redes-sociales {
   width: 50dvw;
   margin: 0 auto;
@@ -987,4 +943,50 @@ footer {
   filter: blur(2px);
   opacity: 0.5;
   z-index: 1;
+}
+}
+
+@media (width >= 1440px) {
+  .codearla-info,
+  .sponsors,
+  .mapa-borde,
+  .location-content {
+    width: 50dvw;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .inscription-form {
+    padding: 9px 40px;
+    font-size: 1.7rem;
+  }
+
+  .speakers .speakers-grid {
+    max-width: 1700px;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .speakers article {
+    grid-column: span 2;
+  }
+
+  .speakers h3 {
+    font-size: 1.9rem;
+  }
+
+  .speakers .bio-text p {
+    font-size: 1.2rem;
+  }
+
+  .speakers article:nth-child(1) {
+    margin-right: 10px;
+    grid-column: 3 / 5;
+  }
+
+  .speakers article:nth-child(2) {
+    margin-left: 10px;
+    grid-column: 5 / 7;
+  }
 }
