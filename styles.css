@@ -176,6 +176,7 @@ main {
   border-radius: 50%;
 }
 
+
 .timer {
   display: flex;
   flex-direction: column;
@@ -185,14 +186,19 @@ main {
   width: 100%;
 }
 
+
 .container-timer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  padding-bottom: 8px;
-  color: aliceblue;
   align-items: center;
+  width: 100%;
+  padding-bottom: 12px;
+  color: aliceblue;
+
 }
+
+
 
 :root {
   --blue-neon: #1f6ae1;
@@ -201,6 +207,7 @@ main {
   --orange-neon: #f97316;
 }
 
+
 .container-timer::after {
   content: "";
   position: absolute;
@@ -208,27 +215,68 @@ main {
   right: 0;
   bottom: 0;
   height: 4px;
+
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--blue-neon) 10%,var(--blue-neon) 25%,
-    var(--violet-neon) 25%,var(--violet-neon)50%,
-    var(--pink-neon) 50%,var(--pink-neon) 75%,
-    var(--orange-neon) 75%,var(--orange-neon) 90%,
+    var(--blue-neon) 10%, var(--blue-neon) 25%,
+    var(--violet-neon) 25%, var(--violet-neon) 50%,
+    var(--pink-neon) 50%, var(--pink-neon) 75%,
+    var(--orange-neon) 75%, var(--orange-neon) 90%,
     transparent 100%
   );
 }
 
-.text-timer {
-  font-size: 1.25rem;
-  margin: 0;
+
+.fade-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(12px) scale(0.98);
+  filter: blur(6px);
+
+  transition:
+    opacity 0.8s cubic-bezier(.4,0,.2,1),
+    transform 0.8s cubic-bezier(.4,0,.2,1),
+    filter 0.8s cubic-bezier(.4,0,.2,1);
 }
 
-#count-timer {
-  margin: 0;
-  padding: 0;
-  font-size: 2.5rem;
+.fade-item.active {
+  position: relative; /* clave */
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
 }
+
+.text-timer {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  
+}
+
+#count-timer,
+#fecha-texto {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-top: 6px;
+  letter-spacing: 1px;
+  
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+
 
 .codearla-info,
 .sponsors {
@@ -801,6 +849,10 @@ footer {
     font-size: 4.8rem;
   }
 
+  #fecha-texto{
+  font-size: 4.8rem;
+  }
+
   .title {
     font-size: 1.7rem;
   }
@@ -953,6 +1005,10 @@ footer {
 
   #count-timer {
     font-size: 6rem;
+  }
+
+  #fecha-texto{
+  font-size: 6rem;
   }
 
   .title {

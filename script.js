@@ -68,3 +68,14 @@ document.querySelectorAll('.nav-elements a').forEach(link => {
     }
   });
 });
+
+const bloqueTimer = document.getElementById("bloque-timer");
+const bloqueFecha = document.getElementById("bloque-fecha");
+
+let mostrandoTimer = true;
+
+setInterval(() => {
+  bloqueTimer.classList.toggle("active");
+  bloqueFecha.classList.toggle("active");
+  mostrandoTimer = !mostrandoTimer;
+}, 10000);
