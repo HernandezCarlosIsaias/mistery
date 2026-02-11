@@ -677,9 +677,16 @@ footer {
 
   .codearla-info h2 span,
   .location h2 span,
-  .sponsors h2 span {
+  .sponsors h2 span,
+  .topics h2 span {
     font-size: 2rem;
   }
+  .topics-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
 
   .speakers h2 span {
     font-size: 2rem;
@@ -819,10 +826,19 @@ footer {
 
   .codearla-info h2 span,
   .location h2 span,
-  .sponsors h2 span {
+  .sponsors h2 span,
+  .topics h2 span {
     font-size: 3.5rem;
   }
 
+  .topics-grid{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
   .speakers h2 span {
     font-size: 3.5rem;
   }
