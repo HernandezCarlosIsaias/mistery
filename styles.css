@@ -247,6 +247,7 @@ main {
     inset 0 0 50px #7C3AED;
 }
 
+
 .codearla-info::before,
 .sponsors::before {
   content: "";
