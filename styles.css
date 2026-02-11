@@ -537,6 +537,7 @@ main {
   margin: 0;
   color: #ffffff;
   width: 100%;
+  font-size: 1rem;
 }
 
 .title-direccion::after {
@@ -1083,13 +1084,13 @@ footer {
     font-size: 1.2rem;
   }
 
-  .speakers article:nth-child(1) {
-    grid-column: 2 / 4;
+  .speakers article:nth-child(4) {
+    grid-column: 3 / 5;
   }
 
-  .speakers article:nth-child(2) {
+  /* .speakers article:nth-child(2) {
     grid-column: 4 / 6;
-  }
+  } */
 
   .location h2 {
     width: 70vw;
@@ -1160,7 +1161,8 @@ footer {
     grid-template-columns: repeat(8, 1fr);
   }
 
-  .speakers article {
+  .speakers article,
+  .speakers article:nth-child(4) {
     grid-column: span 2;
   }
 
@@ -1177,13 +1179,13 @@ footer {
     font-size: 1.2rem;
   }
 
-  .speakers article:nth-child(1) {
+  /* .speakers article:nth-child(5) {
     margin-right: 10px;
     grid-column: 3 / 5;
   }
 
-  .speakers article:nth-child(2) {
+  .speakers article:nth-child(6) {
     margin-left: 10px;
     grid-column: 5 / 7;
-  }
+  } */
 }
