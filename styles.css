@@ -68,7 +68,8 @@ main {
 
 .burguer-button {
   display: block;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: 20px;
   background: none;
   border: none;
   color: white;
@@ -85,8 +86,8 @@ main {
   flex-direction: column;
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+  left: auto;
+  right: 10px;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -97,7 +98,6 @@ main {
   z-index: 99;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 .nav-elements.active {
   max-height: 400px;
