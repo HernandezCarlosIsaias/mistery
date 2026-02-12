@@ -78,4 +78,4 @@ setInterval(() => {
   bloqueTimer.classList.toggle("active");
   bloqueFecha.classList.toggle("active");
   mostrandoTimer = !mostrandoTimer;
-}, 10000);
+}, 4000);
