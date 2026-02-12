@@ -723,7 +723,8 @@ main {
 }
 
 .sponsors article:nth-child(7),
-.sponsors article:nth-child(8) {
+.sponsors article:nth-child(8),
+.sponsors article:nth-child(9) {
   background-color: rgb(0, 0, 0);
 }
 
@@ -1105,13 +1106,13 @@ footer {
     grid-column: span 2;
   }
 
-  .sponsors article:nth-child(7) {
+  /* .sponsors article:nth-child(7) {
     grid-column: 2 / 4;
   }
 
   .sponsors article:nth-child(8) {
     grid-column: 4 / 6;
-  }
+  } */
 
   .red-social-icon {
     width: 70px;
@@ -1128,6 +1129,7 @@ footer {
   .redes-sociales h2 span {
     font-size: 3.5rem;
   }
+
 }
 
 @media (width >= 1440px) {
