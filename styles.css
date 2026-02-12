@@ -631,8 +631,7 @@ main {
   width: 225px;
   height: 225px;
   object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 15px;
+  margin: 5px auto 0 auto;
   display: block;
 }
 
@@ -1171,7 +1170,11 @@ footer {
     font-size: 1.3rem;
   }
 
-  .speakers article:nth-child(4) {
-    grid-column: 3 / 5;
+  .speakers article:nth-child(7) {
+    grid-column: 2 / 4;
+  }
+
+  .speakers article:nth-child(8) {
+    grid-column: 4 / 6;
   }
 }
