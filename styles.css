@@ -715,10 +715,16 @@ img {
 
 .sponsors article:nth-child(2),
 .sponsors article:nth-child(3),
-.sponsors article:nth-child(4),
 .sponsors article:nth-child(6),
 .sponsors article:nth-child(7) {
   background-color: rgb(255, 255, 255);
+}
+
+.sponsors article:nth-child(2) img,
+.sponsors article:nth-child(3) img,
+.sponsors article:nth-child(6) img,
+.sponsors article:nth-child(7) img {
+  color: black;
 }
 
 .sponsors article:nth-child(4) {
