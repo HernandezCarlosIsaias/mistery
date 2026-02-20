@@ -777,6 +777,35 @@ img {
   filter: brightness(1.5);
 }
 
+  .register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    height: auto;
+    /*border: solid 2px white;*/
+    background-image: linear-gradient( #ffffff18, var(--violet-neon));
+    animation: changeColor 5s infinite alternate;
+  }
+
+  .inscription-button {
+    margin: 20px 0;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 20px;
+    padding: 18px 48px;
+    font-weight: 600;
+    background-color: #d02569;
+    transition: all 0.2s ease;
+  }
+  .inscription-button:hover{
+    background-color: black;
+    color:#d02569;
+    filter: brightness(2);
+  }
+
 footer {
   grid-area: footer;
   display: flex;
@@ -925,6 +954,11 @@ footer {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 50%;
+  }
+  .register{
+    height: 300px;
+    text-align: center;
+    align-items: center;
   }
 
   .inscription-form {
@@ -1104,10 +1138,20 @@ footer {
     margin-right: 10px;
   }
 
+   .register{
+    height: 400px;
+    padding-top: 100px;
+    align-items: center;
+  }
+  .register h2 span {
+    font-size: 2.5em;
+  }
+
   .inscription-form {
     padding: 10px 40px;
     font-size: 1.4rem;
   }
+
   footer {
     flex-direction: row;
     justify-content: space-between;
