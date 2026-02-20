@@ -777,16 +777,6 @@ img {
   filter: brightness(1.5);
 }
 
-  @property --color-center {
-    syntax: '<color>';
-    initial-value: #22d3ee;
-    inherits: false;
-  }
-  @property --color-final {
-    syntax: '<color>';
-    initial-value: #1f69e1e8;
-    inherits: false;
-  }
   .register{
     display: flex;
     flex-direction: column;
@@ -795,44 +785,10 @@ img {
     padding: 20px;
     height: auto;
     /*border: solid 2px white;*/
-    background: radial-gradient(
-      circle at 50% 30%, 
-      var(--color-center) 30%,
-      var(--color-final) 100%
-  );
+    background-image: linear-gradient( #ffffff18, var(--violet-neon));
     animation: changeColor 5s infinite alternate;
   }
 
-  @keyframes changeColor {
-    14% {
-      --color-center: #22d3ee;
-      --color-final: #1f69e1e8;
-    }
-    28% {
-      --color-center: #ff10cb;
-      --color-final: #d525f0;
-    }
-    42%{
-      --color-center: #00000029;
-      --color-final: #1f69e1e8;
-    }
-    56% {
-      --color-center: #00000029;
-      --color-final: #1f69e1e8;
-    }
-    70% {
-      --color-center: #00000029;
-      --color-final: #1f69e1e8;
-    }
-    84% {
-      --color-center: #00000029;
-      --color-final: #4716f9;
-    }
-    100% {
-      --color-center: #00000029;
-      --color-final: #16f92d8e;
-    }
-  }
   .inscription-button {
     margin: 20px 0;
     cursor: pointer;
@@ -840,6 +796,14 @@ img {
     border-style: none;
     border-radius: 20px;
     padding: 18px 48px;
+    font-weight: 600;
+    background-color: #d02569;
+    transition: all 0.2s ease;
+  }
+  .inscription-button:hover{
+    background-color: black;
+    color:#d02569;
+    filter: brightness(2);
   }
 
 footer {
@@ -990,6 +954,11 @@ footer {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 50%;
+  }
+  .register{
+    height: 300px;
+    text-align: center;
+    align-items: center;
   }
 
   .inscription-form {
@@ -1167,6 +1136,15 @@ footer {
     height: 70px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+   .register{
+    height: 400px;
+    padding-top: 100px;
+    align-items: center;
+  }
+  .register h2 span {
+    font-size: 2.5em;
   }
 
   .inscription-form {
