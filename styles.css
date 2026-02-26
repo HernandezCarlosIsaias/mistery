@@ -358,7 +358,7 @@ img {
   -webkit-background-clip: text;
   color: transparent;
   background-size: 100%;
-  font-size: 1.4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -796,17 +796,14 @@ img {
     /* border: solid 2px white;
     background-image: url("img/inscription-image.png"); */
     background-size: cover;
-    filter:contrast(1.2);
-    transition: all 0.3s ease;
     box-shadow: 
     0 0 25px #7C3AED,
     0 0 25px #7C3AED,
     inset 0 0 50px #7C3AED;
-    background-color: #7c3aed4f;
+    background: #30175C;
+    background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
   }
-  .register:hover{
-    filter: contrast(1.5);
-  }
+
   .register h2 span {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.761);
@@ -1292,11 +1289,19 @@ footer {
   }
 
   .agenda {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   padding: 80px 20px;
-  /* background-color: rgba(48, 23, 92, 0.82); */
+  /* background-color: #000000a6; */
+  box-shadow: 
+    0 0 25px #7C3AED,
+    0 0 25px #7C3AED,
+    inset 0 0 50px #7C3AED;
   background: #30175C;
-background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
-  font-family: 'Inter', sans-serif;
+  background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
 }
 
 .agenda-container {
@@ -1314,7 +1319,7 @@ background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.
 }
 
 .agenda-title {
-  font-size: 32px;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #ffffff;
@@ -1328,6 +1333,7 @@ background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.
 .agenda-subtitle {
   color: #ffffff;
   margin-bottom: 30px;
+  font-size: 1.4rem;
 }
 
 .agenda-divider {
@@ -1346,19 +1352,19 @@ background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.
 
 .agenda-time {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1.2rem;
 }
 
 .agenda-content h3 {
-  font-size: 20px;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 8px;
   color: #ffffff;
 }
 
 .agenda-content p {
-    color: #ffffff;
-  font-size: 0.9rem;
+  color: #ffffff;
+  font-size: 1.1rem;
   line-height: 1.6;
   font-weight: 500;
   margin: 0 0 10px 0;
@@ -1375,7 +1381,7 @@ background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.
 }
 
 .agenda-speaker span {
-  font-size: 14px;
+  font-size: 1.1rem;
   color: #ffffff;
   display: block;
   margin-bottom: 6px;
@@ -1383,7 +1389,7 @@ background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.
 
 .agenda-speaker p {
     color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   font-weight: 500;
   margin: 0 0 10px 0;
