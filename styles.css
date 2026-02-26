@@ -825,12 +825,25 @@ footer {
   background-color: black;
   color: white;
   align-items: center;
-  padding: 10px;
+  padding: 35px;
+}
+
+#author {
+  grid-area: author;
+}
+
+#contact-us {
+  grid-area: contact-us;
+}
+
+#redes-sociales {
+  grid-area: redes-sociales;
 }
 
 .author {
   display: flex;
   align-items: center;
+  margin-top: 16px;
 }
 
 .logo-footer {
@@ -854,6 +867,10 @@ footer {
 .contact-us h2 span,
 .redes-sociales h2 span {
   font-size: 18px;
+}
+
+.redes-sociales h2 {
+  margin-top: 0;
 }
 
 .redes-sociales {
@@ -1183,14 +1200,18 @@ footer {
   }
 
   footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'author contact-us redes-sociales';
   }
 
   .logo-footer {
     width: 70px;
     height: 70px;
+  }
+
+  .author {
+    justify-content: center;
   }
 
   .contact-us {
