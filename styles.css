@@ -7,7 +7,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 60px 1fr auto;
-  grid-template-areas: 
+  grid-template-areas:
     "navbar"
     "main"
     "footer";
@@ -63,11 +63,11 @@ img {
   padding: 2.5px;
   z-index: 100;
 }
+
 #codearla-info,
 #sponsors,
 #speakers,
-#location 
-#redes-sociales {
+#location #redes-sociales {
   scroll-margin-top: 130px;
 }
 
@@ -82,6 +82,7 @@ img {
   cursor: pointer;
   z-index: 101;
 }
+
 .burguer-button:hover {
   color: #7C3AED;
 }
@@ -104,14 +105,17 @@ img {
   list-style: none;
   margin: 0;
 }
+
 .nav-elements.active {
   max-height: 400px;
   opacity: 1;
 }
+
 .nav-elements li {
   list-style: none;
   margin: 10px 0;
 }
+
 .nav-elements a {
   color: white;
   text-decoration: none;
@@ -120,10 +124,12 @@ img {
   transition: color 0.3s ease;
   margin-left: 20px;
 }
+
 .nav-elements.active li {
   list-style: none;
   margin: 10px 0;
 }
+
 .nav-elements.active a {
   color: white;
   text-decoration: none;
@@ -132,10 +138,12 @@ img {
   transition: color 0.3s ease;
   margin-left: 20px;
 }
+
 .nav-elements.active a:hover {
   color: #7C3AED;
   filter: brightness(1.2);
 }
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -161,6 +169,7 @@ img {
   0% {
     background-position: 0% center;
   }
+
   100% {
     background-position: 200% center;
   }
@@ -220,15 +229,13 @@ img {
   bottom: 0;
   height: 4px;
 
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--blue-neon) 10%, var(--blue-neon) 25%,
-    var(--violet-neon) 25%, var(--violet-neon) 50%,
-    var(--pink-neon) 50%, var(--pink-neon) 75%,
-    var(--orange-neon) 75%, var(--orange-neon) 90%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      transparent 0%,
+      var(--blue-neon) 10%, var(--blue-neon) 25%,
+      var(--violet-neon) 25%, var(--violet-neon) 50%,
+      var(--pink-neon) 50%, var(--pink-neon) 75%,
+      var(--orange-neon) 75%, var(--orange-neon) 90%,
+      transparent 100%);
 }
 
 
@@ -247,13 +254,14 @@ img {
   filter: blur(6px);
 
   transition:
-    opacity 0.8s cubic-bezier(.4,0,.2,1),
-    transform 0.8s cubic-bezier(.4,0,.2,1),
-    filter 0.8s cubic-bezier(.4,0,.2,1);
+    opacity 0.8s cubic-bezier(.4, 0, .2, 1),
+    transform 0.8s cubic-bezier(.4, 0, .2, 1),
+    filter 0.8s cubic-bezier(.4, 0, .2, 1);
 }
 
 .fade-item.active {
-  position: relative; /* clave */
+  position: relative;
+  /* clave */
   opacity: 1;
   transform: translateY(0) scale(1);
   filter: blur(0);
@@ -264,7 +272,7 @@ img {
   margin: 0;
   opacity: 0.8;
   letter-spacing: 0.5px;
-  
+
 }
 
 #count-timer,
@@ -273,7 +281,7 @@ img {
   font-weight: 600;
   margin-top: 6px;
   letter-spacing: 1px;
-  
+
 }
 
 .invisible {
@@ -294,7 +302,7 @@ img {
   border-radius: 40px;
   padding: 10px 20px;
   border: 2px solid #7C3AED;
-  box-shadow: 
+  box-shadow:
     0 0 25px #7C3AED,
     0 0 25px #7C3AED,
     inset 0 0 50px #7C3AED;
@@ -345,15 +353,13 @@ img {
 .sponsors h2 span,
 .red-social h2 span,
 .agenda-container h2 span {
-  background-image: linear-gradient(
-    to right,
-    #1f6ae1,
-    #22d3ee,
-    #7c3aed,
-    #d946ef,
-    #f97316,
-    #facc15
-  );
+  background-image: linear-gradient(to right,
+      #1f6ae1,
+      #22d3ee,
+      #7c3aed,
+      #d946ef,
+      #f97316,
+      #facc15);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -379,14 +385,14 @@ img {
   text-align: center;
 }
 
-.topics-grid{
+.topics-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 10px;
 }
 
-.topic-card{
+.topic-card {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -399,79 +405,74 @@ img {
   backdrop-filter: blur(20px);
   filter: brightness(1);
 }
-.development{
-  background: radial-gradient(
-    circle at 50% 30%, 
-    #00000029 30%,
-    #1f69e1e8 100%
-    );
+
+.development {
+  background: radial-gradient(circle at 50% 30%,
+      #00000029 30%,
+      #1f69e1e8 100%);
   transition: filter 0.3s ease;
 }
-.data-science{
-  background: radial-gradient(
-    circle at 50% 30%, 
-    #00000029 30%,
-    #d525f0 100%
-    );
+
+.data-science {
+  background: radial-gradient(circle at 50% 30%,
+      #00000029 30%,
+      #d525f0 100%);
   transition: filter 0.3s ease;
 }
-.devops{
-  background: radial-gradient(
-    circle at 50% 30%, 
-    #00000029 30%,
-    #22d3ee 100%
-    );
+
+.devops {
+  background: radial-gradient(circle at 50% 30%,
+      #00000029 30%,
+      #22d3ee 100%);
   transition: filter 0.3s ease;
 }
-.ux{
-  background: radial-gradient(
-    circle at 50% 30%, 
-    #00000029 30%,
-    #7c3aed 100%
-    );
+
+.ux {
+  background: radial-gradient(circle at 50% 30%,
+      #00000029 30%,
+      #7c3aed 100%);
   transition: filter 0.3s ease;
 }
-.product{
-  background: radial-gradient(
-    circle at 50% 30%, 
-    #00000029 30%,
-    #f97316 100%
-    );
+
+.product {
+  background: radial-gradient(circle at 50% 30%,
+      #00000029 30%,
+      #f97316 100%);
   transition: filter 0.3s ease;
 }
-.qa{
-  background: radial-gradient(
-    circle at 50% 30%, 
-    #00000029 30%,
-    #f9ea16 100%
-    );
+
+.qa {
+  background: radial-gradient(circle at 50% 30%,
+      #00000029 30%,
+      #f9ea16 100%);
   transition: filter 0.3s ease;
 }
-.maker{
-  background: radial-gradient(
-    circle at 50% 30%, 
-    #00000029 30%,
-    #4716f9 100%
-    );
+
+.maker {
+  background: radial-gradient(circle at 50% 30%,
+      #00000029 30%,
+      #4716f9 100%);
   transition: filter 0.3s ease;
 }
-.open-source{
-  background: radial-gradient(
-    circle at 50% 30%, 
-    #00000029 30%,
-    #16f92d8e 100%
-    );
+
+.open-source {
+  background: radial-gradient(circle at 50% 30%,
+      #00000029 30%,
+      #16f92d8e 100%);
   transition: filter 0.3s ease;
 }
-.topic-card:hover{
+
+.topic-card:hover {
   filter: brightness(1.5);
   border: 2px solid rgba(255, 255, 255, 0.928);
 }
-.topic-img{
+
+.topic-img {
   width: 70%;
   height: auto;
 }
-.topic-card h3{
+
+.topic-card h3 {
   color: rgba(255, 255, 255, 0.518);
 }
 
@@ -518,15 +519,13 @@ img {
   bottom: 0;
   height: 4px;
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       transparent 0%,
-      var(--blue-neon) 10%,var(--blue-neon) 25%,
-      var(--violet-neon) 25%,var(--violet-neon)50%,
-      var(--pink-neon) 50%,var(--pink-neon) 75%,
-      var(--orange-neon) 75%,var(--orange-neon) 90%,
-      transparent 100%
-    );
+      var(--blue-neon) 10%, var(--blue-neon) 25%,
+      var(--violet-neon) 25%, var(--violet-neon)50%,
+      var(--pink-neon) 50%, var(--pink-neon) 75%,
+      var(--orange-neon) 75%, var(--orange-neon) 90%,
+      transparent 100%);
 }
 
 
@@ -556,15 +555,13 @@ img {
   height: 4px;
   width: 100%;
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       transparent 0%,
-      var(--blue-neon) 10%,var(--blue-neon) 25%,
-      var(--violet-neon) 25%,var(--violet-neon)50%,
-      var(--pink-neon) 50%,var(--pink-neon) 75%,
-      var(--orange-neon) 75%,var(--orange-neon) 90%,
-      transparent 100%
-    );
+      var(--blue-neon) 10%, var(--blue-neon) 25%,
+      var(--violet-neon) 25%, var(--violet-neon)50%,
+      var(--pink-neon) 50%, var(--pink-neon) 75%,
+      var(--orange-neon) 75%, var(--orange-neon) 90%,
+      transparent 100%);
 }
 
 .logo-parque article {
@@ -590,15 +587,13 @@ img {
 
 .speakers h2 span,
 .topics h2 span {
-  background-image: linear-gradient(
-    to right,
-    #1f6ae1,
-    #22d3ee,
-    #7c3aed,
-    #d946ef,
-    #f97316,
-    #facc15
-  );
+  background-image: linear-gradient(to right,
+      #1f6ae1,
+      #22d3ee,
+      #7c3aed,
+      #d946ef,
+      #f97316,
+      #facc15);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -631,7 +626,8 @@ img {
   min-width: 0;
   box-shadow: 0 0 25px #7C3AED,
     0 0 25px #7C3AED,
-    inset 0 0 50px #7C3AED;;
+    inset 0 0 50px #7C3AED;
+  ;
 }
 
 .speakers img {
@@ -703,7 +699,7 @@ img {
 .sponsors article {
   grid-column: span 1;
   aspect-ratio: 5/2;
-  background-color: rgba(255, 255, 255, 0.2); 
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -747,7 +743,7 @@ img {
 }
 
 .sponsors article:hover {
-  filter: brightness(1.2); 
+  filter: brightness(1.2);
   transform: translateY(-5px);
 }
 
@@ -763,15 +759,15 @@ img {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-image: linear-gradient(45deg,#3624dc, #3823d2, #861ea1, #d02569, #e4173e, #de1c37, #ff6641);
+  background-image: linear-gradient(45deg, #3624dc, #3823d2, #861ea1, #d02569, #e4173e, #de1c37, #ff6641);
   background-repeat: no-repeat;
   color: white;
   padding: 12px 36px;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 
-  10px -10px 30px -10px #fa0000fd,
-  -20px 10px 30px -10px #000bab;
+  box-shadow:
+    10px -10px 30px -10px #fa0000fd,
+    -20px 10px 30px -10px #000bab;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), filter 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1), background-position 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 20px;
 }
@@ -779,55 +775,57 @@ img {
 .inscription-form:hover {
   background-image: linear-gradient(45deg, #ff6641, #de1c37, #e4173e, #d02569, #861ea1, #3823d2, #3624dc);
   background-position: 100% 100%;
-  box-shadow: 
+  box-shadow:
     -10px 10px 30px -10px #fa0000fd,
     20px -10px 30px -10px #000bab;
   transform: scale(1.05);
   filter: brightness(1.5);
 }
 
-  .register{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    padding: 20px;
-    height: auto;
-    /* border: solid 2px white;
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  height: auto;
+  /* border: solid 2px white;
     background-image: url("img/inscription-image.png"); */
-    background-size: cover;
-    box-shadow: 
+  background-size: cover;
+  box-shadow:
     0 0 25px #7C3AED,
     0 0 25px #7C3AED,
     inset 0 0 50px #7C3AED;
-    background: #30175C;
-    background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
-  }
+  background: #30175C;
+  background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
+}
 
-  .register h2 span {
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.761);
-    /* -webkit-text-stroke: 1px #000bab; */
-    text-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
-  }
-  .inscription-button {
-    margin: 20px 0;
-    cursor: pointer;
-    text-decoration: none;
-    border-style: none;
-    border-radius: 20px;
-    padding: 20px 50px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: white;
-    background-image: linear-gradient(45deg,#3624dc, #3823d2, #861ea1, #d02569, #e4173e, #de1c37, #ff6641);
-    transition: all 0.2s ease;
-  }
-  .inscription-button:hover{
-    background-color: black;
-    color: white;
-    filter: brightness(2);
-  }
+.register h2 span {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.761);
+  /* -webkit-text-stroke: 1px #000bab; */
+  text-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+}
+
+.inscription-button {
+  margin: 20px 0;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 20px;
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  background-image: linear-gradient(45deg, #3624dc, #3823d2, #861ea1, #d02569, #e4173e, #de1c37, #ff6641);
+  transition: all 0.2s ease;
+}
+
+.inscription-button:hover {
+  background-color: black;
+  color: white;
+  filter: brightness(2);
+}
 
 footer {
   grid-area: footer;
@@ -891,7 +889,108 @@ footer {
   gap: 0;
 }
 
-@media (600px <= width < 1024px) {
+/* ======================== */
+/* ESTILOS BASE PARA AGENDA (MÓVIL) */
+/* ======================== */
+.agenda {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  box-shadow:
+    0 0 25px #7C3AED,
+    0 0 25px #7C3AED,
+    inset 0 0 50px #7C3AED;
+  background: #30175C;
+  background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
+}
+
+.agenda-container {
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.agenda-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.agenda-title span {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.agenda-subtitle {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.agenda-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-bottom: 25px;
+}
+
+.agenda-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.agenda-time {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.agenda-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.agenda-content p {
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.agenda-content a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.agenda-content a:hover {
+  text-decoration: underline;
+}
+
+.agenda-speaker span {
+  font-size: 0.95rem;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.agenda-speaker p {
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+@media (600px <=width < 1024px) {
   body {
     background-image: url("img/background-codearla-tablet.jpg");
   }
@@ -904,13 +1003,14 @@ footer {
     font-size: 4.8rem;
   }
 
-  #fecha-texto{
-  font-size: 4.8rem;
+  #fecha-texto {
+    font-size: 4.8rem;
   }
 
   .title {
     font-size: 1.7rem;
   }
+
   .codearla-info,
   .mapa-borde,
   .sponsors {
@@ -924,16 +1024,19 @@ footer {
 
     font-size: 2rem;
   }
-  .topics-grid{
+
+  .topics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 10px;
   }
-  .topic-card{
+
+  .topic-card {
     min-width: 150px;
     margin: 0;
   }
+
   .speakers h2 span {
     font-size: 2rem;
   }
@@ -990,10 +1093,10 @@ footer {
     flex: 1;
   }
 
-  .title{
+  .title {
     font-size: 1.7rem;
   }
-  
+
   .red-social-icon {
     width: 40px;
     height: 40px;
@@ -1002,7 +1105,8 @@ footer {
     margin-right: 5px;
     border-radius: 50%;
   }
-  .register{
+
+  .register {
     height: 300px;
     text-align: center;
     align-items: center;
@@ -1019,18 +1123,20 @@ footer {
   }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
   body {
     background-image: url("img/background-codearla-desktop.jpg");
   }
+
   .burguer-button {
     display: none;
   }
+
   .nav-elements {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    position:static;
+    position: static;
     max-height: none;
     overflow: visible;
     opacity: 1;
@@ -1042,9 +1148,11 @@ footer {
     list-style: none;
     margin-right: 15px;
   }
+
   .nav-elements li {
     list-style: none;
   }
+
   .nav-elements a {
     color: white;
     text-decoration: none;
@@ -1052,9 +1160,11 @@ footer {
     font-size: 1.1rem;
     transition: color 0.3s ease;
   }
+
   .nav-elements a:hover {
     color: #7C3AED;
   }
+
   .logo-icon {
     transition: transform 0.5s ease-in-out;
   }
@@ -1075,8 +1185,8 @@ footer {
     font-size: 6rem;
   }
 
-  #fecha-texto{
-  font-size: 6rem;
+  #fecha-texto {
+    font-size: 6rem;
   }
 
   .title {
@@ -1096,18 +1206,20 @@ footer {
     font-size: 3.5rem;
   }
 
-  .topics-grid{
+  .topics-grid {
     display: grid;
     width: 70%;
     margin: auto;
-    justify-content:center;
+    justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 10px;
   }
-  .topic-card{
+
+  .topic-card {
     min-width: 200px;
   }
+
   .speakers h2 span {
     font-size: 3.5rem;
   }
@@ -1190,11 +1302,12 @@ footer {
     margin-right: 10px;
   }
 
-  .register{
+  .register {
     height: 400px;
     padding-top: 100px;
     align-items: center;
   }
+
   .register h2 span {
     font-size: 2.5em;
     /* -webkit-text-stroke: 3px #000bab; */
@@ -1226,7 +1339,7 @@ footer {
   }
 
   .contact-us {
-    align-items: center;  
+    align-items: center;
   }
 
   .redes-sociales {
@@ -1244,11 +1357,12 @@ footer {
 
 }
 
-@media (width >= 1440px) {
+@media (width >=1440px) {
+
   .codearla-info,
   .sponsors,
   .mapa-borde,
-  .location-content{
+  .location-content {
     width: 50dvw;
   }
 
@@ -1289,121 +1403,102 @@ footer {
   }
 
   .agenda {
-  width: 85%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 80px 20px;
-  /* background-color: #000000a6; */
-  box-shadow: 
-    0 0 25px #7C3AED,
-    0 0 25px #7C3AED,
-    inset 0 0 50px #7C3AED;
-  background: #30175C;
-  background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
-}
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 80px 20px;
+    /* background-color: #000000a6; */
+    box-shadow:
+      0 0 25px #7C3AED,
+      0 0 25px #7C3AED,
+      inset 0 0 50px #7C3AED;
+    background: #30175C;
+    background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
+  }
 
-.agenda-container {
-  width: 50dvw;
-  margin: 10px auto;
-  padding: 20px;
-}
+  .agenda-container {
+    width: 50dvw;
+    margin: 10px auto;
+    padding: 20px;
+  }
 
-.agenda-label {
-  color: #22c55e;
-  font-weight: 600;
-  font-size: 14px;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.agenda-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.agenda-title span {
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.agenda-subtitle {
-  color: #ffffff;
-  margin-bottom: 30px;
-  font-size: 1.4rem;
-}
-
-.agenda-divider {
-  height: 1px;
-  background-color: #e5e7eb;
-  margin-bottom: 40px;
-}
-
-.agenda-item {
-  display: grid;
-  grid-template-columns: 180px 1fr 250px;
-  gap: 40px;
-  padding: 30px 0;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.agenda-time {
-  color: #ffffff;
-  font-size: 1.2rem;
-}
-
-.agenda-content h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #ffffff;
-}
-
-.agenda-content p {
-  color: #ffffff;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  font-weight: 500;
-  margin: 0 0 10px 0;
-}
-
-.agenda-content a {
-  color: #ffffff;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.agenda-content a:hover {
-  text-decoration: underline;
-}
-
-.agenda-speaker span {
-  font-size: 1.1rem;
-  color: #ffffff;
-  display: block;
-  margin-bottom: 6px;
-}
-
-.agenda-speaker p {
+  .agenda-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
     color: #ffffff;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  font-weight: 500;
-  margin: 0 0 10px 0;
-}
+  }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
+  .agenda-title span {
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .agenda-subtitle {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+  }
+
+  .agenda-divider {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin-bottom: 40px;
+  }
+
   .agenda-item {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: 180px 1fr 250px;
+    gap: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e7eb;
   }
 
-  .agenda-speaker {
-    margin-top: 10px;
+  .agenda-time {
+    color: #ffffff;
+    font-size: 1.2rem;
   }
-}
+
+  .agenda-content h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+
+  .agenda-content p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+  }
+
+  .agenda-content a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .agenda-content a:hover {
+    text-decoration: underline;
+  }
+
+  .agenda-speaker span {
+    font-size: 1.1rem;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .agenda-speaker p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+  }
+
 }
