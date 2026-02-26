@@ -320,7 +320,8 @@ img {
 .codearla-info h2,
 .codearla-info p,
 .sponsors h2,
-.sponsors div {
+.sponsors div,
+.agenda-container h2 {
   position: relative;
   z-index: 2;
 }
@@ -328,7 +329,8 @@ img {
 .codearla-info h2,
 .speakers h2,
 .location h2,
-.sponsors h2 {
+.sponsors h2,
+.agenda-container h2 {
   margin-top: 5px;
 }
 
@@ -341,7 +343,8 @@ img {
 .codearla-info h2 span,
 .location h2 span,
 .sponsors h2 span,
-.red-social h2 span {
+.red-social h2 span,
+.agenda-container h2 span {
   background-image: linear-gradient(
     to right,
     #1f6ae1,
@@ -1190,4 +1193,114 @@ footer {
   .speakers .bio-text p {
     font-size: 1.3rem;
   }
+
+  .agenda {
+  padding: 80px 20px;
+  /* background-color: rgba(48, 23, 92, 0.82); */
+  background: #30175C;
+background: linear-gradient(90deg, rgba(48, 23, 92, 0.915) 10%, rgba(0, 0, 0, 0.874) 50%, rgba(48, 23, 92, 0.808) 95%);
+  font-family: 'Inter', sans-serif;
+}
+
+.agenda-container {
+  width: 50dvw;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.agenda-label {
+  color: #22c55e;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.agenda-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.agenda-title span {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.agenda-subtitle {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.agenda-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-bottom: 40px;
+}
+
+.agenda-item {
+  display: grid;
+  grid-template-columns: 180px 1fr 250px;
+  gap: 40px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.agenda-time {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.agenda-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.agenda-content p {
+    color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.agenda-content a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.agenda-content a:hover {
+  text-decoration: underline;
+}
+
+.agenda-speaker span {
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.agenda-speaker p {
+    color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .agenda-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .agenda-speaker {
+    margin-top: 10px;
+  }
+}
 }

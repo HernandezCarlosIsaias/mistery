@@ -1,18 +1,23 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <title>Codear.la</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="codear, codear.la, codearla, evento, programacion, espacio, charlas" />
-  <meta name="description" content="Sumate al espacio gratuito de programación para intercambiar ideas junto a personas que hablan tu mismo idioma." />
+  <meta name="description"
+    content="Sumate al espacio gratuito de programación para intercambiar ideas junto a personas que hablan tu mismo idioma." />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css?v=1.0" />
 </head>
+
 <body>
   <nav class="navbar">
     <div class="logo-container">
@@ -30,7 +35,7 @@
     </ul>
 
     <button class="burguer-button">
-    ☰
+      ☰
     </button>
   </nav>
   <main>
@@ -38,70 +43,73 @@
     <section class="timer">
       <div class="container-timer">
 
-          
-          <div class="fade-item active" id="bloque-timer">
-              <p class="text-timer">Faltan:</p>
-              <div id="count-timer"></div>
-          </div>
 
-          
-          <div class="fade-item" id="bloque-fecha">
-              <p class="text-timer invisible">Faltan:</p>
-              <p id="fecha-texto" class="text-timer">14 de Marzo</p>
-          </div>
+        <div class="fade-item active" id="bloque-timer">
+          <p class="text-timer">Faltan:</p>
+          <div id="count-timer"></div>
+        </div>
 
-      </div>      
+
+        <div class="fade-item" id="bloque-fecha">
+          <p class="text-timer invisible">Faltan:</p>
+          <p id="fecha-texto" class="text-timer">14 de Marzo</p>
+        </div>
+
+      </div>
     </section>
 
     <section id="codearla-info" class="codearla-info">
-        <h2><span>¿Qué es Codearla?</span></h2>
-        <p>Un encuentro que se llevará a cabo el día 14 de marzo, de 9 a 18hs, impulsado entre quienes programamos, donde la tecnología se comparte y la comunidad es protagonista.</p>
-        <p>Un evento gratuito que reúne charlas, experiencias sobre programación y tecnología, con foco en el open source y el aprendizaje colectivo.</p>
-        <p>Codearla es más que un evento: es un espacio para conectar, intercambiar ideas, junto a personas que hablan tu mismo idioma. </p>
+      <h2><span>¿Qué es Codearla?</span></h2>
+      <p>Un encuentro que se llevará a cabo el día 14 de marzo, de 9 a 18hs, impulsado entre quienes programamos, donde
+        la tecnología se comparte y la comunidad es protagonista.</p>
+      <p>Un evento gratuito que reúne charlas, experiencias sobre programación y tecnología, con foco en el open source
+        y el aprendizaje colectivo.</p>
+      <p>Codearla es más que un evento: es un espacio para conectar, intercambiar ideas, junto a personas que hablan tu
+        mismo idioma. </p>
     </section>
 
     <section id="topics" class="topics">
-        <h2><span>Temáticas de las charlas</span></h2>
-        <div class="topics-grid">
-            <article class="topic-card development">
-                <img src="img/topics/programacion.webp" alt="Imagen ilustrativa de Development" class="topic-img">
-                <h3>Development</h3>
-            </article>
+      <h2><span>Temáticas de las charlas</span></h2>
+      <div class="topics-grid">
+        <article class="topic-card development">
+          <img src="img/topics/programacion.webp" alt="Imagen ilustrativa de Development" class="topic-img">
+          <h3>Development</h3>
+        </article>
 
-            <article class="topic-card data-science">
-                <img src="img/topics/vigilancia.webp" alt="Imagen ilustrativa de Data Science" class="topic-img">
-                <h3>Data Science</h3>
-            </article>
+        <article class="topic-card data-science">
+          <img src="img/topics/vigilancia.webp" alt="Imagen ilustrativa de Data Science" class="topic-img">
+          <h3>Data Science</h3>
+        </article>
 
-            <article class="topic-card devops">
-                <img src="img/topics/cloud-service.webp" alt="Imagen ilustrativa de DevOps" class="topic-img">
-                <h3>DevOps</h3>
-            </article>
+        <article class="topic-card devops">
+          <img src="img/topics/cloud-service.webp" alt="Imagen ilustrativa de DevOps" class="topic-img">
+          <h3>DevOps</h3>
+        </article>
 
-            <article class="topic-card ux">
-                <img src="img/topics/diseno-ux.webp" alt="Imagen ilustrativa de Diseño UX" class="topic-img">
-                <h3>UX</h3>
-            </article>
+        <article class="topic-card ux">
+          <img src="img/topics/diseno-ux.webp" alt="Imagen ilustrativa de Diseño UX" class="topic-img">
+          <h3>UX</h3>
+        </article>
 
-            <article class="topic-card product">
-                <img src="img/topics/nuevo-producto.webp" alt="Imagen ilustrativa de Product" class="topic-img">
-                <h3>Product</h3>
-            </article>
+        <article class="topic-card product">
+          <img src="img/topics/nuevo-producto.webp" alt="Imagen ilustrativa de Product" class="topic-img">
+          <h3>Product</h3>
+        </article>
 
-            <article class="topic-card qa">
-                <img src="img/topics/busqueda-de-virus.webp" alt="Imagen ilustrativa de QA" class="topic-img">
-                <h3>QA</h3>
-            </article>
+        <article class="topic-card qa">
+          <img src="img/topics/busqueda-de-virus.webp" alt="Imagen ilustrativa de QA" class="topic-img">
+          <h3>QA</h3>
+        </article>
 
-            <article class="topic-card maker">
-                <img src="img/topics/destornillador.webp" alt="Imagen ilustrativa de Maker" class="topic-img">
-                <h3>Maker</h3>
-            </article>
+        <article class="topic-card maker">
+          <img src="img/topics/destornillador.webp" alt="Imagen ilustrativa de Maker" class="topic-img">
+          <h3>Maker</h3>
+        </article>
 
-            <article class="topic-card open-source">
-                <img src="img/topics/candado-abierto.webp" alt="Imagen ilustrativa de Open Source" class="topic-img">
-                <h3>Open source</h3>
-            </article>
+        <article class="topic-card open-source">
+          <img src="img/topics/candado-abierto.webp" alt="Imagen ilustrativa de Open Source" class="topic-img">
+          <h3>Open source</h3>
+        </article>
     </section>
 
     <section id="speakers" class="speakers">
@@ -112,7 +120,8 @@
           <h3>Marcos Ferradas</h3>
           <div class="bio-text">
             <p>Militante del Software, culturas libres y la ciencia abierta.</p>
-            <p>Estudié Física y aprendí a programar para hacer simulaciones científicas, y sobre hardware y Linux con amigos y comunidad.</p>
+            <p>Estudié Física y aprendí a programar para hacer simulaciones científicas, y sobre hardware y Linux con
+              amigos y comunidad.</p>
             <p>Trabajo en áreas de DevOps hace 5 años en distintas empresas de todos los tamaños.</p>
           </div>
         </article>
@@ -123,7 +132,9 @@
           <div class="bio-text">
             <p>Licenciado en Ciencias de la Computación.</p>
             <p>Doctorado y docente de informática e ingeniero en Inteligencia Artificial en la industria.</p>
-            <p>Combino mi trabajo técnico en IA con investigación, formación de nuevos programadores y una participación activa en organizaciones de derechos digitales, Software Libre y cultura libre como Cybercirujas, LibreBase y Vía Libre.</p>
+            <p>Combino mi trabajo técnico en IA con investigación, formación de nuevos programadores y una participación
+              activa en organizaciones de derechos digitales, Software Libre y cultura libre como Cybercirujas,
+              LibreBase y Vía Libre.</p>
           </div>
         </article>
 
@@ -143,7 +154,8 @@
           <div class="bio-text">
             <p>Desarrollador backend y líder en transformación digital.</p>
             <p>Conecto el rigor científico con la arquitectura de sistemas escalables y de alto impacto.</p>
-            <p>Apasionado por la robótica educativa y convencido de que el software solo tiene sentido cuando acompaña procesos de cambio organizacional.</p>
+            <p>Apasionado por la robótica educativa y convencido de que el software solo tiene sentido cuando acompaña
+              procesos de cambio organizacional.</p>
           </div>
         </article>
 
@@ -152,8 +164,10 @@
           <h3>Luis Romano</h3>
           <div class="bio-text">
             <p>Ingeniero en Computación por la Universidad Nacional de Córdoba.</p>
-            <p>Tengo experiencia como Linux Sysadmin y Python Developer. También soy docente de la Tecnicatura Superior en Desarrollo de Software del Instituto Técnico Superior Córdoba.</p>
-            <p>Participo del Programa SOL3 (Soluciones Solidarias de Software Libre) dentro de la Fundación Mueve. Pero sobre todas las cosas, soy un entusiasta del software libre y el open source en general.</p>
+            <p>Tengo experiencia como Linux Sysadmin y Python Developer. También soy docente de la Tecnicatura Superior
+              en Desarrollo de Software del Instituto Técnico Superior Córdoba.</p>
+            <p>Participo del Programa SOL3 (Soluciones Solidarias de Software Libre) dentro de la Fundación Mueve. Pero
+              sobre todas las cosas, soy un entusiasta del software libre y el open source en general.</p>
           </div>
         </article>
 
@@ -161,9 +175,12 @@
           <img src="img/speakers/martinaCruzSpeaker.webp" alt="Martina Cruz">
           <h3>Martina Cruz</h3>
           <div class="bio-text">
-            <p>Diseñadora de Producto con una formación multidisciplinaria que integra sociología, diseño y psicología.</p>
+            <p>Diseñadora de Producto con una formación multidisciplinaria que integra sociología, diseño y psicología.
+            </p>
             <p>Actualmente lidero la evolución del diseño en una startup B2B SaaS.</p>
-            <p>Combino mi experiencia técnica con un enfoque humanista integral, buscando mejorar la vida de las personas a través de interfaces intuitivas y accesibles en áreas de alto impacto como EdTech, productividad y tecnología cívica.</p>
+            <p>Combino mi experiencia técnica con un enfoque humanista integral, buscando mejorar la vida de las
+              personas a través de interfaces intuitivas y accesibles en áreas de alto impacto como EdTech,
+              productividad y tecnología cívica.</p>
           </div>
         </article>
 
@@ -171,8 +188,10 @@
           <img src="img/speakers/nadiaLujanSpeaker.webp" alt="Nadia Luján">
           <h3>Nadia Luján</h3>
           <div class="bio-text">
-            <p>Profesional de QA Automation con amplia experiencia en aseguramiento de la calidad de productos de software.</p>
-            <p>Trabajo de forma integral en la calidad del producto, desde la automatización de pruebas hasta la definición de procesos y buenas prácticas, en contextos ágiles y productos de ciberseguridad.</p>
+            <p>Profesional de QA Automation con amplia experiencia en aseguramiento de la calidad de productos de
+              software.</p>
+            <p>Trabajo de forma integral en la calidad del producto, desde la automatización de pruebas hasta la
+              definición de procesos y buenas prácticas, en contextos ágiles y productos de ciberseguridad.</p>
           </div>
         </article>
 
@@ -197,26 +216,100 @@
       </div>
     </section>
 
+    <section class="agenda">
+      <div class="agenda-container">
+
+        <h2><span>Agenda</span></h2>
+
+        <h2 class="agenda-title">
+          Day 1 - English & Portuguese sessions
+          <span>/ February 24</span>
+        </h2>
+
+        <p class="agenda-subtitle">
+          Where technology, talent, and careers meet.
+        </p>
+
+        <div class="agenda-divider"></div>
+
+        <!-- ITEM 1 -->
+        <div class="agenda-item">
+          <div class="agenda-time">
+            02:00 PM - 02:05 PM
+          </div>
+
+          <div class="agenda-content">
+            <h3>Intro - Design your journey with confidence.</h3>
+            <p>Join us for two days of global insights on Data, Cloud, and smarter career decision-making.</p>
+          </div>
+
+          <div class="agenda-speaker">
+            <span>Speaker:</span>
+            <p>Carolina Remedi</p>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="agenda-item">
+          <div class="agenda-time">
+            02:00 PM - 03:10 PM
+          </div>
+
+          <div class="agenda-content">
+            <h3>Tech & Career Trends 2026</h3>
+            <p>What's changing and what it means for your career.</p>
+            <a href="#">- Find out more -</a>
+          </div>
+
+          <div class="agenda-speaker">
+            <span>Speaker:</span>
+            <p>
+              Yuri Maia <br>
+              Ritesh Menon <br>
+              Agus Huerta <br>
+              Daniel Kazuyuki Fujii Matsumoto
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="agenda-item">
+          <div class="agenda-time">
+            03:10 PM - 03:50 PM
+          </div>
+
+          <div class="agenda-content">
+            <h3>Build your career in Data & AI</h3>
+            <p>Skills and opportunities shaping tomorrow.</p>
+            <a href="#">- Find out more -</a>
+          </div>
+
+          <div class="agenda-speaker">
+            <span>Speaker:</span>
+            <p>
+              Jyothish Javaraman <br>
+              Izaskún López-Samaniego <br>
+              Tomás Tecce <br>
+              Anna Skripnikova
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section id="location" class="location">
       <h2><span>Ubicación</span></h2>
 
       <div class="location-content">
         <div class="mapa-borde">
-            <iframe
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.0954279628245!2d-64.23339299999999!3d-31.466561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3d31a67ede1%3A0x90d9136bad3104e!2sParque%20Educativo%20Sur!5e0!3m2!1ses-419!2sar!4v1769905289949!5m2!1ses-419!2sar"
-            title="Ubicación del evento Codearla en Parque Educativo Sur"
-            width="600"
-            height="450"
-            style="border:0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            
-            <a href="https://www.google.com/maps/place/Parque+Educativo+Sur/@-31.466561,-64.233393,17z"
-            target="_blank"
-            class="map-link"
-            aria-label="Ver ubicación en Google Maps"></a>
+            title="Ubicación del evento Codearla en Parque Educativo Sur" width="600" height="450" style="border:0"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://www.google.com/maps/place/Parque+Educativo+Sur/@-31.466561,-64.233393,17z" target="_blank"
+            class="map-link" aria-label="Ver ubicación en Google Maps"></a>
         </div>
 
         <div class="logo-parque">
@@ -239,15 +332,16 @@
       <h2><span>SPONSORS</span></h2>
       <div>
         <article>
-          <img src="img/sponsors/neps-sponsor.webp" alt ="Slogan de Neps">
+          <img src="img/sponsors/neps-sponsor.webp" alt="Slogan de Neps">
         </article>
 
         <article>
-          <img src="img/sponsors/universidad-provincial-cordoba-sponsor.webp" alt="Slogan de Universidad Provincial de Córdoba">
+          <img src="img/sponsors/universidad-provincial-cordoba-sponsor.webp"
+            alt="Slogan de Universidad Provincial de Córdoba">
         </article>
 
         <article>
-          <img src="img/sponsors/efenix-sponsor.webp" alt ="Slogan de Efenix">
+          <img src="img/sponsors/efenix-sponsor.webp" alt="Slogan de Efenix">
         </article>
 
         <article>
@@ -255,7 +349,7 @@
         </article>
 
         <article>
-          <img src="img/sponsors/universidad-villa-maria-sponsor.webp" alt ="Slogan de Universidad Nacional Villa María">
+          <img src="img/sponsors/universidad-villa-maria-sponsor.webp" alt="Slogan de Universidad Nacional Villa María">
         </article>
 
         <article>
@@ -263,7 +357,7 @@
         </article>
 
         <article>
-          <img src="img/sponsors/jumo-sponsor.webp" alt ="Slogan de Jumo Mentoring">
+          <img src="img/sponsors/jumo-sponsor.webp" alt="Slogan de Jumo Mentoring">
         </article>
 
         <article>
@@ -271,11 +365,11 @@
         </article>
 
         <article>
-          <img src="img/sponsors/CodeHype-sponsor.webp" alt ="Slogan de CodeHype">
+          <img src="img/sponsors/CodeHype-sponsor.webp" alt="Slogan de CodeHype">
         </article>
       </div>
     </section>
-    
+
     <section id="redes-sociales" class="redes-sociales">
       <h2><span>REDES SOCIALES</span></h2>
       <div class="red-social-container">
@@ -302,4 +396,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
