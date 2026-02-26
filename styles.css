@@ -172,11 +172,11 @@ img {
 }
 
 .red-social-icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   padding: 3px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 12px;
+  margin-right: 12px;
   border-radius: 50%;
 }
 
@@ -786,74 +786,112 @@ img {
   filter: brightness(1.5);
 }
 
-footer {
-  grid-area: footer;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.redes-sociales {
-  width: 85dvw;
-  margin: 0 auto 1.5rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: black;
-  position: relative;
-  overflow: hidden;
-  border-radius: 40px;
-  padding: 10px 20px;
-  border: 2px solid #7C3AED;
-  box-shadow: 
+  .register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    height: auto;
+    /* border: solid 2px white;
+    background-image: url("img/inscription-image.png"); */
+    background-size: cover;
+    filter:contrast(1.2);
+    transition: all 0.3s ease;
+    box-shadow: 
     0 0 25px #7C3AED,
     0 0 25px #7C3AED,
     inset 0 0 50px #7C3AED;
-  text-align: center;
-}
+    background-color: #7c3aed4f;
+  }
+  .register:hover{
+    filter: contrast(1.5);
+  }
+  .register h2 span {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.761);
+    /* -webkit-text-stroke: 1px #000bab; */
+    text-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+  }
+  .inscription-button {
+    margin: 20px 0;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 20px;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    background-image: linear-gradient(45deg,#3624dc, #3823d2, #861ea1, #d02569, #e4173e, #de1c37, #ff6641);
+    transition: all 0.2s ease;
+  }
+  .inscription-button:hover{
+    background-color: black;
+    color: white;
+    filter: brightness(2);
+  }
 
-.redes-sociales h2,
-.redes-sociales div {
-  position: relative;
-  z-index: 2;
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
   color: white;
-  margin: 5px 0 0 0;
+  align-items: center;
+  padding: 35px;
 }
 
+#author {
+  grid-area: author;
+}
+
+#contact-us {
+  grid-area: contact-us;
+}
+
+#redes-sociales {
+  grid-area: redes-sociales;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.logo-footer {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.contact-us p a {
+  color: white;
+}
+
+.contact-us h2 span,
 .redes-sociales h2 span {
-  background-image: linear-gradient(
-    to right,
-    #1f6ae1,
-    #22d3ee,
-    #7c3aed,
-    #d946ef,
-    #f97316,
-    #facc15
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: 100%;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 18px;
 }
 
-.redes-sociales::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("img/background-section-compress.jpg");
-  background-size: cover;
-  background-position: center;
-  filter: blur(2px);
-  opacity: 0.5;
-  z-index: 1;
+.redes-sociales h2 {
+  margin-top: 0;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
 @media (600px <= width < 1024px) {
@@ -878,8 +916,7 @@ footer {
   }
   .codearla-info,
   .mapa-borde,
-  .sponsors,
-  .redes-sociales {
+  .sponsors {
     width: 75dvw;
   }
 
@@ -968,10 +1005,20 @@ footer {
     margin-right: 5px;
     border-radius: 50%;
   }
+  .register{
+    height: 300px;
+    text-align: center;
+    align-items: center;
+  }
 
   .inscription-form {
     padding: 12px 38px;
     font-size: 1.2rem;
+  }
+
+  .logo-footer {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -1041,8 +1088,7 @@ footer {
 
   .codearla-info,
   .mapa-borde,
-  .sponsors,
-  .redes-sociales {
+  .sponsors {
     width: 70dvw;
   }
 
@@ -1147,13 +1193,56 @@ footer {
     margin-right: 10px;
   }
 
+  .register{
+    height: 400px;
+    padding-top: 100px;
+    align-items: center;
+  }
+  .register h2 span {
+    font-size: 2.5em;
+    /* -webkit-text-stroke: 3px #000bab; */
+  }
+
+  .inscription-button {
+    padding: 20px 70px;
+    font-size: 1.8rem;
+  }
+
   .inscription-form {
     padding: 10px 40px;
     font-size: 1.4rem;
   }
 
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'author contact-us redes-sociales';
+  }
+
+  .logo-footer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .author {
+    justify-content: center;
+  }
+
+  .contact-us {
+    align-items: center;  
+  }
+
+  .redes-sociales {
+    align-items: center;
+  }
+
   .redes-sociales h2 span {
-    font-size: 3.5rem;
+    margin-left: 10px;
+  }
+
+  .red-social-icon {
+    width: 50px;
+    height: 50px;
   }
 
 }
@@ -1162,8 +1251,7 @@ footer {
   .codearla-info,
   .sponsors,
   .mapa-borde,
-  .location-content,
-  .redes-sociales{
+  .location-content{
     width: 50dvw;
   }
 
