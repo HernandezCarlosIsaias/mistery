@@ -1419,7 +1419,7 @@ footer {
   }
 
   .agenda-container {
-    width: 50dvw;
+    width: 75dvw;
     margin: 10px auto;
     padding: 20px;
   }
@@ -1501,4 +1501,4 @@ footer {
     margin: 0 0 10px 0;
   }
 
-}
+} 
