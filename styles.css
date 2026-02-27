@@ -1107,7 +1107,7 @@ footer {
   }
 
   .register {
-    height: 300px;
+    height: auto;
     text-align: center;
     align-items: center;
   }
