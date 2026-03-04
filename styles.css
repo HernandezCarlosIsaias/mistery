@@ -753,6 +753,10 @@ img {
   object-fit: contain;
 }
 
+.section-inscription {
+  margin: 25px 0;
+}
+
 .inscription-form {
   cursor: pointer;
   z-index: 100;
