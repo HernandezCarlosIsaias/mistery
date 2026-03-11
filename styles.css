@@ -714,6 +714,7 @@ img {
 
 .sponsors article:nth-child(2),
 .sponsors article:nth-child(3),
+.sponsors article:nth-child(4),
 .sponsors article:nth-child(7),
 .sponsors article:nth-child(8),
 .sponsors article:nth-child(9) {
@@ -722,21 +723,21 @@ img {
 
 .sponsors article:nth-child(2) img,
 .sponsors article:nth-child(3) img,
+.sponsors article:nth-child(4) img,
 .sponsors article:nth-child(7) img,
 .sponsors article:nth-child(8) img,
 .sponsors article:nth-child(9) img {
   color: black;
 }
 
-.sponsors article:nth-child(4) {
+.sponsors article:nth-child(5) {
   background-color: rgb(4, 132, 171);
 }
 
-.sponsors article:nth-child(5) {
+.sponsors article:nth-child(6) {
   background-color: rgb(24, 91, 153);
 }
 
-.sponsors article:nth-child(6),
 .sponsors article:nth-child(10),
 .sponsors article:nth-child(11) {
   background-color: rgb(0, 0, 0);
