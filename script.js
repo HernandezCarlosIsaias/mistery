@@ -6,7 +6,10 @@ function updateTimer() {
 
   if (diff <= 0) {
     document.getElementById("count-timer").innerHTML = "¡Llegó el 14 de marzo!";
-    document.getElementById("text-count").style.display="none";
+    const timerText = document.getElementById("count-timer").previousElementSibling;
+    if (timerText) {
+      timerText.style.display = "none";
+    }
     clearInterval(interval);
     return;
   }
@@ -69,13 +72,25 @@ document.querySelectorAll('.nav-elements a').forEach(link => {
   });
 });
 
-const bloqueTimer = document.getElementById("bloque-timer");
-const bloqueFecha = document.getElementById("bloque-fecha");
+const nowForFade = new Date();
+if (targetDate - nowForFade > 0) {
+    const bloqueTimer = document.getElementById("bloque-timer");
+    const bloqueFecha = document.getElementById("bloque-fecha");
 
-let mostrandoTimer = true;
+    let mostrandoTimer = true;
 
-setInterval(() => {
-  bloqueTimer.classList.toggle("active");
-  bloqueFecha.classList.toggle("active");
-  mostrandoTimer = !mostrandoTimer;
-}, 4000);
+    setInterval(() => {
+      bloqueTimer.classList.toggle("active");
+      bloqueFecha.classList.toggle("active");
+      mostrandoTimer = !mostrandoTimer;
+    }, 4000);
+} else {
+    const bloqueTimer = document.getElementById("bloque-timer");
+    if (bloqueTimer) {
+        bloqueTimer.classList.add("active");
+    }
+    const bloqueFecha = document.getElementById("bloque-fecha");
+    if (bloqueFecha) {
+        bloqueFecha.classList.remove("active");
+    }
+}
